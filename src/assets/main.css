@@ -1,0 +1,73 @@
+@import "./base.css";
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+.page-home__promo {
+  position: relative;
+  background: #c9f73a;
+}
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+.page-home__promo-inner {
+  overflow: hidden;
+  position: relative;
+}
+.page-home__promo-bg {
+  top: 400px;
+}
+.radar-bg,
+.page-home__promo-bg {
+  width: 5000px;
+  height: 5000px;
+  background: conic-gradient(#c9f73a 64%, white);
+  margin-top: -2500px;
+  margin-left: calc(50% - 2500px);
+  position: absolute;
+  top: 400px;
+  left: 0;
+  z-index: 0;
+  transform: rotateZ(5deg);
+  -webkit-animation-name: bg-rotate-full;
+  animation-name: bg-rotate-full;
+  -webkit-animation-duration: 36s;
+  animation-duration: 36s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bg-rotate-full {
+  0% {
+    transform: rotateZ(125deg);
+  }
+  100% {
+    transform: rotateZ(485deg);
+  }
+}
