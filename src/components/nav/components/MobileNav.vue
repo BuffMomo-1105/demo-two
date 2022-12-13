@@ -76,11 +76,14 @@ const showNav = () => {
   font-weight: 500px !important;
 }
 .mbl-nav-extend {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   min-height: 100vh;
   z-index: 9999;
   background: white;
+  top: 100px;
+  overflow: scroll;
+  max-height: 90vh;
 }
 @media (min-width: 1430px) {
   .navbar-mbl {

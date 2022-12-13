@@ -18,7 +18,7 @@ body {
 }
 .page-home__promo {
   position: relative;
-  background: #c9f73a;
+  background: rgb(123 208 248);
 }
 article,
 aside,
@@ -43,7 +43,7 @@ section {
 .page-home__promo-bg {
   width: 5000px;
   height: 5000px;
-  background: conic-gradient(#c9f73a 64%, white);
+  background: conic-gradient(rgb(123 208 248) 64%, white);
   margin-top: -2500px;
   margin-left: calc(50% - 2500px);
   position: absolute;

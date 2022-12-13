@@ -34,6 +34,12 @@ const menus = ref([
 }
 #nav ul a:hover {
   opacity: 0.5;
+  border-bottom: 2px solid rgb(65 176 228);
+}
+
+.nav-link-mbl:hover {
+  opacity: 0.5;
+  border-bottom: 2px solid rgb(65 176 228);
 }
 .nav-container {
   margin: 10px 6.5rem !important;

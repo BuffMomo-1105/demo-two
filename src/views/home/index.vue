@@ -36,22 +36,6 @@
   </div>
   <!-- Section two ends -->
 
-  <!-- Section three starts -->
-  <Projection>
-    <template #slogan-left>
-      No mark-up spread<br />Trade with Trust<br />Upto 1:500 leverage<br />
-    </template>
-    <template #home-button> Meet your tommorrow managers </template>
-    <template #slogan-right>
-      A flexible commission plan for all traders combined with the necessary
-      leverage strengthens your trading. Our copy trade platform is more
-      progressive, and traditional providers are struggling to stay up with all
-      of these changes. Our payment infrastructure will always be cutting-edge,
-      facilitating rather than limiting your trading growth.
-    </template>
-  </Projection>
-  <!-- Section three ends-->
-
   <!-- Section four starts -->
   <div class="section-four text-start">
     <div data-aos="fade-up" class="card-one">
@@ -83,6 +67,56 @@
     </div>
   </div>
   <!-- Section four ends -->
+
+  <!-- Section five starts -->
+  <div class="section-five text-start pb-4">
+    <h1 class="section-five-heading">
+      What is your choice of trading account?
+    </h1>
+    <div class="row section-five-card">
+      <div data-aos="fade-up" class="col card-first">
+        <img
+          src="https://www.unlimint.com/wp-content/themes/unlimint/assets/images/home-products/phone.png"
+          alt=""
+          class="section-three-img"
+        /><span class="inner-text">0.6P</span>
+        <h2>Low Spread</h2>
+        <a href="/" class="text-decoration-none">
+          <h5 class="learn-more mt-4">Learn More</h5></a
+        >
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="200" class="col card-second">
+        <img
+          src="https://www.unlimint.com/wp-content/themes/unlimint/assets/images/home-products/earth.png"
+          alt=""
+          class="section-three-img"
+        />
+        <span class="inner-text">6$ per lakh</span>
+        <h2 class="ms-4">Zero Spread</h2>
+        <a href="/" class="text-decoration-none"
+          ><h5 class="learn-more mt-4 ms-4">Learn More</h5></a
+        >
+      </div>
+    </div>
+  </div>
+  <!-- Section five starts -->
+
+  <!-- Section three starts -->
+  <Projection>
+    <template #slogan-left>
+      No mark-up spread<br />Trade with Trust<br />Upto 1:500 leverage<br />
+    </template>
+    <template #home-button> Meet your tommorrow managers </template>
+    <template #slogan-right>
+      A flexible commission plan for all traders combined with the necessary
+      leverage strengthens your trading. Our copy trade platform is more
+      progressive, and traditional providers are struggling to stay up with all
+      of these changes. Our payment infrastructure will always be cutting-edge,
+      facilitating rather than limiting your trading growth.
+    </template>
+  </Projection>
+  <!-- Section three ends-->
 </template>
 <script setup>
 import Projection from "./components/Projection.vue";
@@ -93,142 +127,7 @@ onMounted(() => {
   AOS.init();
 });
 </script>
-<style>
-.home-section-two {
-  padding-bottom: 8rem;
-  background-image: linear-gradient(to bottom, #a5a5a5 0%, #fefefe 100%);
-}
-.home-two-slogan {
-  font-size: 56px;
-  margin-left: 14rem;
-  padding-top: 10rem;
-}
-.sub-slogan {
-  font-size: 48px;
-  color: #c9f73a;
-  margin-left: 18rem;
-  margin-top: 2.5rem;
-}
-.home-two-info {
-  margin-top: 2.5rem;
-  margin-left: 18rem;
-  width: 61%;
-}
-.home-btn-two {
-  margin-top: 2.5rem;
-  margin-left: 18rem;
-}
-@media (max-width: 1270px) {
-  .home-section-two {
-    padding-bottom: 8rem;
-  }
-  .home-two-slogan,
-  .home-btn-two,
-  .sub-slogan,
-  .home-two-info,
-  .home-btn-two {
-    margin: 0;
-    margin-left: 8% !important;
-  }
-  .home-btn-two,
-  .sub-slogan,
-  .home-two-info,
-  .home-btn-two {
-    margin-top: 2rem;
-  }
-  .home-two-info {
-    width: 90vw;
-  }
-  .home-btn-two {
-    width: 88% !important;
-  }
-}
 
-.section-four {
-  background-color: black;
-  padding: 4rem 0;
-}
-.card-one {
-  width: 540px;
-  height: 320px;
-  background-color: white;
-  padding: 2rem;
-  margin-left: 18%;
-  border: 1px solid black;
-}
-.card-two {
-  width: 50%;
-  height: 480px;
-  background-color: white;
-  padding: 2rem;
-  margin-left: 44%;
-  position: relative;
-  top: -125px;
-  border: 1px solid black;
-}
-.card-body {
-  position: relative !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  padding: 1rem;
-}
-.card-one-content {
-  font-weight: 600;
-  font-size: 37px;
-}
-.card-two-content {
-  font-size: 20px;
-  letter-spacing: 1px;
-  line-height: 2rem;
-}
-.card-circle {
-  padding: 0.7rem;
-  margin-right: 5px;
-  background-color: #c9f73a;
-  border-radius: 50%;
-}
-@media (max-width: 800px) {
-  .card-one-content {
-    font-size: 37px;
-  }
-  .card-one {
-    width: 90vw !important;
-    height: 320px;
-    padding: 2rem;
-    margin: auto;
-  }
-  .card-two {
-    width: 90vw;
-    height: 480px;
-    padding: 2rem;
-    margin: auto;
-    margin-top: 2rem;
-    top: 0;
-  }
-  .card-two-content {
-    line-height: normal;
-  }
-  .card-body {
-    position: relative !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    padding: 1rem;
-  }
-}
-@media (min-width: 800px) and (max-width: 1200px) {
-  .card-one {
-    width: 36%;
-    height: 320px;
-    padding: 2rem;
-  }
-  .card-two {
-    top: -80px;
-  }
-  .card-one-content {
-    font-size: 27px;
-  }
-  .card-two-content {
-    line-height: normal;
-  }
-}
+<style>
+@import "../../assets/home.css";
 </style>
