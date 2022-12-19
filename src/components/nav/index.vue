@@ -9,7 +9,7 @@ import DesktopNav from "./components/DesktopNav.vue";
 import { ref } from "vue";
 const menus = ref([
   { name: "Trading Platform", path: "/" },
-  { name: "Copy Trading", path: "/" },
+  { name: "Copy Trading", path: "/copy-trading" },
   { name: "Trading Account", path: "/" },
   { name: "Trading Tool", path: "/" },
   { name: "Learn n Earn", path: "/" },
@@ -32,7 +32,7 @@ const menus = ref([
   line-height: 15px;
   margin-left: 13px;
 }
-#nav ul a:hover {
+.router-link-exact-active,#nav ul a:hover {
   opacity: 0.5;
   border-bottom: 2px solid rgb(65 176 228);
 }

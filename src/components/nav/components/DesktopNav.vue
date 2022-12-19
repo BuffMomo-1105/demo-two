@@ -11,7 +11,9 @@
       <div id="navbarTogglerDemo02" class="collapse navbar-collapse mx-2">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item" v-for="item in menus" :key="item.name">
-            <a class="nav-link" href="#">{{ item.name }}</a>
+            <router-link class="nav-link" :to="item.path">
+              {{ item.name }}
+            </router-link>
           </li>
         </ul>
       </div>
