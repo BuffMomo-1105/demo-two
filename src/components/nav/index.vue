@@ -32,11 +32,13 @@ const menus = ref([
   line-height: 15px;
   margin-left: 13px;
 }
-.router-link-exact-active,#nav ul a:hover {
+#nav ul a:hover {
   opacity: 0.5;
   border-bottom: 2px solid rgb(65 176 228);
 }
-
+.router-link-exact-active{
+  border-bottom: 3px solid rgb(65 176 228);
+}
 .nav-link-mbl:hover {
   opacity: 0.5;
   border-bottom: 2px solid rgb(65 176 228);

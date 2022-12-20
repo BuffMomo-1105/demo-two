@@ -12,6 +12,9 @@
           /></a>
         </div>
         <div class="d-flex position-absolute end-0 me-4 mbl-nav-second">
+          <div class="mbl-demo-btn ms-2">
+            <a class="nav-link demo-btn" href="#">Demo</a>
+          </div>
           <div class="ms-2" @click="showNav">
             <svg
               v-if="!openNav"
@@ -53,6 +56,7 @@
       </div>
     </nav>
     <div v-if="openNav" class="text-start mbl-nav-extend">
+      <a class="nav-link demo-btn demo-below" href="#">Demo</a>
       <ul class="navbar-nav nav flex-column me-auto mb-2 mb-lg-0">
         <li class="nav-item" v-for="item in menus" :key="item.name">
           <a class="nav-link nav-link-mbl" href="#">{{ item.name }}</a>
@@ -94,5 +98,17 @@ const showNav = () => {
 .mbl-nav-extend {
   padding-left: 3rem !important;
   padding-right: 2rem !important;
+}
+.demo-below {
+  width: 100% !important;
+  text-align: center;
+  font-size: 2px;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+@media (750px <= width <= 1430px) {
+  .demo-below {
+    display: none !important;
+  }
 }
 </style>

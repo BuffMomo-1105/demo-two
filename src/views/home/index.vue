@@ -18,6 +18,14 @@
 
   <!-- Section two starts -->
   <div class="home-section-two text-start">
+    <iframe
+      src="https://www.youtube.com/embed/E7UO8DXY4a8?autoplay=1&mute=1&enablejsapi=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      class="home-video"
+    ></iframe>
     <h1 class="home-slogan home-two-slogan">
       Do you have any idea <br />how you'll pay for your trade?
     </h1>
@@ -129,5 +137,26 @@ onMounted(() => {
 </script>
 
 <style>
-@import "../../assets/home.css";
+@import "../../assets/styles/home.css";
+.home-video{
+  width: 75%;
+    margin: auto;
+    position: relative;
+    left: 14%;
+    bottom: 20vh;
+    height: 80vh;
+}
+
+@media (max-width:1430px) {
+  .home-video{
+    bottom:0;
+  }
+}
+@media (max-width:650px) {
+  .home-video{
+    width: 100%;
+    left:0;
+    height: 250px;
+  }
+}
 </style>

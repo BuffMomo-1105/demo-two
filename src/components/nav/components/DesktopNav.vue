@@ -15,6 +15,9 @@
               {{ item.name }}
             </router-link>
           </li>
+          <li class="nav-item nav-second">
+            <a class="nav-link demo-btn" href="#">Demo</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -23,3 +26,20 @@
 <script setup>
 const props = defineProps(["menus"]);
 </script>
+
+<style>
+.demo-btn {
+  width: 65px;
+  line-height: 40px;
+}
+.demo-btn {
+  background-color: rgb(123 208 248);
+  border: none;
+  width: 6.5rem;
+}
+@media (max-width: 750px) {
+  .mbl-demo-btn {
+    display: none;
+  }
+}
+</style>
