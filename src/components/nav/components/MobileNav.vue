@@ -6,7 +6,7 @@
     >
       <div class="d-flex position-static">
         <div class="me-auto">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="/"
             ><img
               src="https://www.unlimint.com/wp-content/themes/unlimint/assets/images/logo.svg"
           /></a>
@@ -59,7 +59,12 @@
       <a class="nav-link demo-btn demo-below" href="#">Demo</a>
       <ul class="navbar-nav nav flex-column me-auto mb-2 mb-lg-0">
         <li class="nav-item" v-for="item in menus" :key="item.name">
-          <a class="nav-link nav-link-mbl" href="#">{{ item.name }}</a>
+          <router-link class="nav-link nav-link-mbl" :to="item.path">
+            {{ item.name }}
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-mbl" href="#">Login</a>
         </li>
       </ul>
     </div>

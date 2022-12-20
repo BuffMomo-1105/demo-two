@@ -4,7 +4,7 @@
     class="navbar navbar-expand-lg navbar-light bg-white navbar-desktop"
   >
     <div class="container-fluid nav-container h-100 me-4">
-      <a class="navbar-brand" href="#"
+      <a class="navbar-brand" href="/"
         ><img
           src="https://www.unlimint.com/wp-content/themes/unlimint/assets/images/logo.svg"
       /></a>
@@ -15,10 +15,9 @@
               {{ item.name }}
             </router-link>
           </li>
-          <li class="nav-item nav-second">
-            <a class="nav-link demo-btn" href="#">Demo</a>
-          </li>
         </ul>
+        <a href="#" class="nav-link me-4">Login</a>
+            <a class="nav-link demo-btn" href="#">Demo</a>
       </div>
     </div>
   </nav>
