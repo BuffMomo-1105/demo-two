@@ -1,4 +1,8 @@
 @import "./base.css";
+@font-face {
+  font-family: Nekst;
+  src: url("../fonts/nekst/Fontspring-DEMO-nekst-black.otf") format("opentype");
+}
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
