@@ -11,6 +11,7 @@
       <div class="sub-title">
         Connect your investment with top strategy traders through Copy2trade
       </div>
+      <img src="../../assets/img/copy-icon.png" alt="" class="copy-image" />
     </section>
 
     <section class="analytics">
@@ -202,6 +203,22 @@
 </template>
 
 <style>
+.copy-image {
+  width: 120px;
+  float: right;
+  margin-right: 5%;
+}
+
+@media (min-width: 770px) {
+  .copy-image {
+    width: 15%;
+    margin-right: 5%;
+    position: absolute;
+    right: 0;
+    top: 52px;
+    z-index: 9999;
+  }
+}
 body {
   color: #000;
 }
@@ -241,7 +258,7 @@ body {
   width: 100%;
   padding-right: 24px;
   padding-left: 24px;
-  font: 20px/30px "Inter", sans-serif;
+  font: 24px/30px "Inter", sans-serif;
   font-weight: 600 !important;
   text-align: left;
 }
@@ -296,7 +313,7 @@ body {
     float: right;
     width: 40%;
     margin-right: 42px;
-    font: 16px/24px "Inter", sans-serif;
+    font: 22px/24px "Inter", sans-serif;
   }
   .copy-page h1 {
     position: absolute;

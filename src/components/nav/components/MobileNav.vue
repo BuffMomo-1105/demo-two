@@ -12,6 +12,7 @@
           /></a>
         </div>
         <div class="d-flex position-absolute end-0 me-4 mbl-nav-second">
+          <a class="nav-link open-account-btn" href="#">Open Account</a>
           <div class="mbl-demo-btn ms-2">
             <a class="nav-link demo-btn" href="#">Demo</a>
           </div>
@@ -115,5 +116,11 @@ const showNav = () => {
   .demo-below {
     display: none !important;
   }
+}
+.open-account-btn {
+  border-radius: 30px;
+  font-size: 14px !important;
+  background-color: #c9f73a;
+  padding: 9px !important;
 }
 </style>

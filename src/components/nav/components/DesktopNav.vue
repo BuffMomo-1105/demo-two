@@ -17,7 +17,7 @@
           </li>
         </ul>
         <a href="#" class="nav-link me-4">Login</a>
-            <a class="nav-link demo-btn" href="#">Demo</a>
+        <a class="nav-link demo-btn" href="#">Demo</a>
       </div>
     </div>
   </nav>
@@ -32,7 +32,7 @@ const props = defineProps(["menus"]);
   line-height: 40px;
 }
 .demo-btn {
-  background-color: #C9F73A;
+  background-color: #c9f73a;
   border: none;
   width: 6.5rem;
 }
