@@ -121,6 +121,7 @@ const showNav = () => {
   border-radius: 30px;
   font-size: 14px !important;
   background-color: #c9f73a;
-  padding: 9px !important;
+  padding: 6px !important;
+  padding-bottom: 0px !important;
 }
 </style>
