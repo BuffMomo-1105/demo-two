@@ -52,6 +52,11 @@ const menus = ref([
   height: 28px;
   margin-right: 71px !important;
 }
+@media (max-width:770px){
+  .navbar-brand{
+    left:-24px;
+  }
+}
 .list-group-item {
   font-size: 16px;
 }
