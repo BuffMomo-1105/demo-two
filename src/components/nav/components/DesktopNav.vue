@@ -3,7 +3,7 @@
     id="nav"
     class="navbar navbar-expand-lg navbar-light bg-white navbar-desktop"
   >
-    <div class="container-fluid nav-container h-100 me-4">
+    <div class="container-fluid nav-container h-100 me-4" style="max-width:1650px;">
       <a class="navbar-brand" href="/"
         ><img
           src="https://www.unlimint.com/wp-content/themes/unlimint/assets/images/logo.svg"
@@ -16,6 +16,7 @@
             </router-link>
           </li>
         </ul>
+        <a class="nav-link open-account-btn me-4" href="#">Open Account</a>
         <a href="#" class="nav-link me-4">Login</a>
         <a class="nav-link demo-btn" href="#">Demo</a>
       </div>
@@ -40,5 +41,8 @@ const props = defineProps(["menus"]);
   .mbl-demo-btn {
     display: none;
   }
+}
+.navbar-expand-lg{
+  justify-content: center !important;
 }
 </style>

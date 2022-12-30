@@ -15,7 +15,6 @@ const menus = ref([
   { name: "Learn n Earn", path: "/learn-n-earn" },
   { name: "Partnership", path: "/partnership" },
   { name: "Get in touch", path: "/get-in-touch" },
-  { name: "Open Account Now", path: "/open-account" },
 ]);
 </script>
 <style>

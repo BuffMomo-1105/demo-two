@@ -1,13 +1,13 @@
 <template>
   <div>
     <section class="copy-page">
-      <h1>
+      <h1 style="max-width:1500px;">
         Trading <br />
         becomes <br />
         Investment
       </h1>
     </section>
-    <section class="sub-section">
+    <section class="sub-section" style="display:block;">
       <div class="sub-title">
         Connect your investment with top strategy traders through Copy2trade
       </div>
@@ -15,7 +15,7 @@
     </section>
 
     <section class="analytics">
-      <div class="row d-flex flex-wrap">
+      <div class="row d-flex flex-wrap" style="max-width:1500px;">
         <div class="col left-item text-start">
           <div class="heading">
             <h1>Advanced Analytics</h1>
@@ -41,8 +41,8 @@
         </div>
       </div>
     </section>
-    <section class="strategy">
-      <div class="row d-flex flex-wrap">
+    <section class="strategy" >
+      <div class="row d-flex flex-wrap" style="max-width:1500px;">
         <div class="col left-item text-start">
           <div class="heading">
             <h1 class="theme-text">Strategy Profiles</h1>
@@ -65,7 +65,7 @@
     </section>
 
     <section class="analytics">
-      <div class="row d-flex flex-wrap">
+      <div class="row d-flex flex-wrap" style="max-width:1500px;">
         <div class="col left-item text-start">
           <div class="heading">
             <h1>Equity to Equity Copying</h1>
@@ -89,7 +89,7 @@
       </div>
     </section>
     <section class="strategy">
-      <div class="row d-flex flex-wrap">
+      <div class="row d-flex flex-wrap" style="max-width:1500px;">
         <div class="col left-item text-start">
           <div class="heading">
             <h1 class="theme-text">Favorites</h1>
@@ -112,7 +112,7 @@
       </div>
     </section>
     <section class="analytics">
-      <div class="ben-wrapper">
+      <div class="ben-wrapper" style="max-width:1500px;">
         <div class="benefit-heading text-start">
           <h1>Investor benefits</h1>
         </div>
@@ -162,7 +162,7 @@
       </div>
     </section>
     <section class="strategy fee-section">
-      <div class="fee">
+      <div class="fee" style="max-width:1500px;">
         <div class="fee-heading">
           <h1 class="theme-text">Fee Structures</h1>
         </div>
@@ -205,18 +205,27 @@
 <style>
 .copy-image {
   width: 120px;
-  float: right;
-  margin-right: 5%;
+  position: absolute;
+  right: 5%;
 }
-
-@media (min-width: 770px) {
-  .copy-image {
-    width: 15%;
+@media (min-width:770px){
+  .copy-image{
+    width: 130px;
     margin-right: 5%;
     position: absolute;
     right: 0;
     top: 52px;
-    z-index: 9999;
+    z-index: 99;
+  }
+}
+@media (min-width: 1400px) {
+  .copy-image {
+    width: 220px;
+    margin-right: 5%;
+    position: absolute;
+    right: 0;
+    top: 52px;
+    z-index: 99;
   }
 }
 body {
@@ -640,9 +649,5 @@ body {
     padding-right: 60px;
     padding-left: 60px;
   }
-}
-
-.theme-text {
-  color: #c9f73a;
 }
 </style>

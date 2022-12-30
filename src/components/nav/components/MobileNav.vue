@@ -3,6 +3,7 @@
     <nav
       id="nav"
       class="navbar navbar-mobile navbar-expand-lg navbar-light bg-white"
+      style="justify-content: space-between !important;"
     >
       <div class="d-flex position-static">
         <div class="me-auto">
@@ -122,6 +123,6 @@ const showNav = () => {
   font-size: 14px !important;
   background-color: #c9f73a;
   padding: 6px !important;
-  padding-bottom: 0px !important;
+  /* padding-bottom: 0px !important; */
 }
 </style>

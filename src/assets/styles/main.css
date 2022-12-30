@@ -73,3 +73,8 @@ section {
     transform: rotateZ(485deg);
   }
 }
+
+section{
+  display: flex;
+  justify-content: center;
+}
