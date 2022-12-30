@@ -2,9 +2,11 @@
   <!-- Section one starts -->
   <Projection>
     <template #slogan-left>
-      Do you <br />
-      trade <br />for passive <br />
-      income?
+      <span class="slogan-top">
+        Do you <br />
+        trade <br />for passive <br />
+        income?
+      </span>
     </template>
     <template #home-button> Meet our top traders... </template>
     <template #slogan-right>
@@ -88,7 +90,7 @@
           alt=""
           class="section-three-img"
         /><span class="inner-text">0.6P</span>
-        <h2>Low Spread</h2>
+        <h2 class="section-five-text">Low Spread</h2>
         <a href="/" class="text-decoration-none">
           <h5 class="learn-more mt-4">Learn More</h5></a
         >
@@ -101,7 +103,7 @@
           class="section-three-img"
         />
         <span class="inner-text">6$ per lakh</span>
-        <h2 class="ms-4">Zero Spread</h2>
+        <h2 class="section-five-text ms-4">Zero Spread</h2>
         <a href="/" class="text-decoration-none"
           ><h5 class="learn-more mt-4 ms-4">Learn More</h5></a
         >
@@ -138,24 +140,24 @@ onMounted(() => {
 
 <style>
 @import "../../assets/styles/home.css";
-.home-video{
+.home-video {
   width: 75%;
-    margin: auto;
-    position: relative;
-    left: 14%;
-    bottom: 20vh;
-    height: 80vh;
+  margin: auto;
+  position: relative;
+  left: 14%;
+  bottom: 20vh;
+  height: 80vh;
 }
 
-@media (max-width:1430px) {
-  .home-video{
-    bottom:0;
+@media (max-width: 1430px) {
+  .home-video {
+    bottom: 0;
   }
 }
-@media (max-width:650px) {
-  .home-video{
+@media (max-width: 650px) {
+  .home-video {
     width: 100%;
-    left:0;
+    left: 0;
     height: 250px;
   }
 }

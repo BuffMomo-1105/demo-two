@@ -208,7 +208,7 @@ body {
 /* Section 1 & 2 */
 .copy-page {
   top: 100px;
-  background: #0b5cff;
+  background: #c9f73a;
   position: relative;
   overflow: hidden;
   height: auto;
@@ -242,7 +242,7 @@ body {
   padding-right: 24px;
   padding-left: 24px;
   font: 20px/30px "Inter", sans-serif;
-  font-weight: 600;
+  font-weight: 600 !important;
   text-align: left;
 }
 /* Section 1 & 2 */
@@ -419,14 +419,14 @@ body {
   height: 48px;
   max-width: 48px;
   min-width: 48px;
-  background: #0b5cff;
+  background: #c9f73a;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
 }
 .list-item {
-  min-width: 100% !important;
+  min-width: 90% !important;
 }
 .benefit .col {
   margin-bottom: 40px;
@@ -474,6 +474,7 @@ body {
   .benefit b {
     margin: 0 4px;
   }
+
   /* .benefit .list-item {
     font: 24px/30px "Inter", sans-serif;
     font-weight: 400;
@@ -521,6 +522,9 @@ body {
 </style>
 
 <style>
+.fee-section {
+  margin-right: 24px;
+}
 .fee {
   background-color: #000000;
   padding: 64px 24px;
@@ -530,7 +534,7 @@ body {
 .fee .card {
   background-color: #000000;
   border: none;
-  border-bottom: 2px solid #0b5cff;
+  border-bottom: 2px solid #c9f73a;
   margin-bottom: 30px;
 }
 .fee-heading h1 {
@@ -546,7 +550,7 @@ body {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
-  color: #0b5cff;
+  color: #c9f73a;
   margin-left: 10px;
 }
 .fee .card .heading .img-section img {
@@ -622,6 +626,6 @@ body {
 }
 
 .theme-text {
-  color: #0b5cff ;
+  color: #c9f73a;
 }
 </style>

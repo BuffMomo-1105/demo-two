@@ -33,14 +33,14 @@ const menus = ref([
 }
 #nav ul a:hover {
   opacity: 0.5;
-  border-bottom: 2px solid rgb(65 176 228);
+  border-bottom: 2px solid #c9f73a;
 }
-.router-link-exact-active{
-  border-bottom: 3px solid rgb(65 176 228);
+.router-link-exact-active {
+  border-bottom: 3px solid #c9f73a;
 }
 .nav-link-mbl:hover {
   opacity: 0.5;
-  border-bottom: 2px solid rgb(65 176 228);
+  border-bottom: 2px solid #c9f73a;
 }
 .nav-container {
   margin: 10px 6.5rem !important;

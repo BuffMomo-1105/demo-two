@@ -10,7 +10,7 @@
 .page-copy__promo-inner {
   overflow: hidden;
   position: relative;
-  background: rgb(123 208 248);
+  background: #C9F73A;
   margin: 0 2rem;
 }
 .copy-top {
@@ -149,7 +149,7 @@
   height: 64px;
   max-width: 64px;
   min-width: 64px;
-  background: rgb(123 208 248);
+  background: #C9F73A;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -196,7 +196,7 @@
   padding: 3rem;
 }
 .fee-section ul li img {
-  border: 3px solid rgb(123 208 248);
+  border: 3px solid #C9F73A;
   border-radius: 20px;
   width: 70%;
 }

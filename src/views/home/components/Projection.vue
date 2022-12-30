@@ -31,10 +31,11 @@
   margin-top: 12rem;
 }
 .home-slogan {
+  font: 56px/62px "Nekst", sans-serif;
   font-weight: 800;
-  font-size: 4rem;
   color: black;
 }
+
 .home-btn {
   width: 300px;
   border: none;
@@ -44,7 +45,6 @@
   font-size: 18px;
   color: white;
 }
-
 @media (max-width: 750px) {
   .home-btn {
     width: 100%;
@@ -53,7 +53,7 @@
 @media (max-width: 1430px) {
   .home-info {
     width: 85vw;
-    padding-bottom:2rem ;
+    padding-bottom: 2rem;
   }
 }
 </style>

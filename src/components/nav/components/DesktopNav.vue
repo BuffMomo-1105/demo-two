@@ -32,7 +32,7 @@ const props = defineProps(["menus"]);
   line-height: 40px;
 }
 .demo-btn {
-  background-color: rgb(123 208 248);
+  background-color: #C9F73A;
   border: none;
   width: 6.5rem;
 }

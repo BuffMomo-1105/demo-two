@@ -77,6 +77,7 @@
   padding: 1rem;
 }
 .card-one-content {
+  font-family: "Nekst", sans-serif;
   font-weight: 600;
   font-size: 37px;
 }
@@ -129,10 +130,16 @@
     top: -80px;
   }
   .card-one-content {
-    font-size: 27px;
+    font-size: 35px;
   }
   .card-two-content {
     line-height: normal;
+  }
+  .section-five-text {
+    font: 14px/20px "Inter", sans-serif;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
   }
 }
 .section-three-img {
@@ -171,7 +178,15 @@
   height: 17px;
   background-image: url("data:image/svg+xml,%3Csvg width='37' height='17' viewBox='0 0 37 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='-4.37114e-08' y1='8.5' x2='36' y2='8.5' stroke='black'/%3E%3Cpath d='M29 1L36 8.5L29 16' stroke='black'/%3E%3C/svg%3E%0A");
 }
+.learn-more {
+  font: 16px/24px "Inter", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+  margin-top: 8px;
+}
 .section-five-heading {
+  font-family: "Nekst", sans-serif;
   font-size: 57px;
   font-weight: 600;
   width: 51%;
@@ -193,8 +208,28 @@
   .card-first {
     min-width: 70%;
   }
+  .section-five-text {
+    font: 20px/30px "Inter", sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 16px;
+  }
 }
 .section-five {
   width: 85vw;
   margin: auto;
+}
+
+.section-five-text {
+  font: 20px/30px "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 800px) {
+  .slogan-top {
+    font: 77px/70px "Nekst", sans-serif;
+  }
 }
