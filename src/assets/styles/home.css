@@ -51,6 +51,8 @@
 .section-four {
   background-color: black;
   padding: 4rem 0;
+  justify-content: center;
+  display: flex;
 }
 .card-one {
   width: 540px;
@@ -219,6 +221,8 @@
 .section-five {
   width: 85vw;
   margin: auto;
+  justify-content: center;
+  display: flex;
 }
 
 .section-five-text {

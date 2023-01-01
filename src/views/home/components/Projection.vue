@@ -1,10 +1,10 @@
 <template>
-  <section class="page-home__promo">
-    <div class="page-home__promo-inner">
+  <section class="page-home__promo" style="max-height: 1080px">
+    <div class="page-home__promo-inner" style="width:100%">
       <div class="page-home__promo-bg"></div>
       <div class="page-home__promo-main">
         <div class="container home-top position-relative">
-          <div class="row text-start">
+          <div class="row text-start" style="max-width: 1500px;">
             <div class="col">
               <h1 class="home-slogan">
                 <slot name="slogan-left"></slot>
@@ -56,4 +56,5 @@
     padding-bottom: 2rem;
   }
 }
+
 </style>

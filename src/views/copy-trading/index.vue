@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="copy-page">
-      <h1 style="max-width:1500px;">
+      <h1 style="max-width:1400px;">
         Trading <br />
         becomes <br />
         Investment
@@ -111,7 +111,7 @@
         </div>
       </div>
     </section>
-    <section class="analytics">
+    <section class="analytics benefits">
       <div class="ben-wrapper" style="max-width:1500px;">
         <div class="benefit-heading text-start">
           <h1>Investor benefits</h1>
@@ -162,7 +162,7 @@
       </div>
     </section>
     <section class="strategy fee-section">
-      <div class="fee" style="max-width:1500px;">
+      <div class="fee" style="max-width:1450px;">
         <div class="fee-heading">
           <h1 class="theme-text">Fee Structures</h1>
         </div>
@@ -648,6 +648,25 @@ body {
   .fee-section {
     padding-right: 60px;
     padding-left: 60px;
+  }
+}
+</style>
+
+<style>
+@media (min-width:1500px){
+  .analytics, .strategy{
+    padding-left: 5%;
+  }
+  .benefits{
+    padding-left: 10%;
+  }
+}
+@media (min-width:2400px){
+  .copy-image{
+    right: 17%;
+  }
+  .sub-title{
+    margin-right: 21%;
   }
 }
 </style>
