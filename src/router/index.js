@@ -50,6 +50,12 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/trading-platform/index.vue"),
   },
   {
+    path: "/trading-chart",
+    name: "Trading Chart",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/trading-chart/index.vue"),
+  },
+  {
     path: "/trading-tool",
     name: "Trading Tool",
     component: () =>

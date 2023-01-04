@@ -3,7 +3,7 @@
     <nav
       id="nav"
       class="navbar navbar-mobile navbar-expand-lg navbar-light bg-white"
-      style="justify-content: space-between !important;"
+      style="justify-content: space-between !important"
     >
       <div class="d-flex position-static">
         <div class="me-auto">
@@ -61,9 +61,26 @@
       <a class="nav-link demo-btn demo-below" href="#">Demo</a>
       <ul class="navbar-nav nav flex-column me-auto mb-2 mb-lg-0">
         <li class="nav-item" v-for="item in menus" :key="item.name">
-          <router-link class="nav-link nav-link-mbl" :to="item.path">
-            {{ item.name }}
-          </router-link>
+          <template v-if="item.subLinks">
+            <a v-b-toggle.collapse-a class="nav-link nav-link-mbl">{{
+              item.name
+            }}</a>
+            <b-collapse id="collapse-a" class="mt-2 ps-4">
+              <router-link
+                class="nav-link nav-link-mbl"
+                :to="link.path"
+                v-for="link in item.subLinks"
+                :key="link.path"
+              >
+                {{ link.name }}
+              </router-link>
+            </b-collapse>
+          </template>
+          <template v-else>
+            <router-link class="nav-link nav-link-mbl" :to="item.path">
+              {{ item.name }}
+            </router-link>
+          </template>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-link-mbl" href="#">Login</a>

@@ -8,13 +8,16 @@ import MobileNav from "./components/MobileNav.vue";
 import DesktopNav from "./components/DesktopNav.vue";
 import { ref } from "vue";
 const menus = ref([
-  { name: "Trading Platform", path: "trading-platform" },
-  { name: "Copy Trading", path: "/copy-trading" },
-  { name: "Trading Account", path: "/trading-account" },
-  { name: "Trading Tool", path: "/trading-tool" },
-  { name: "Learn n Earn", path: "/learn-n-earn" },
-  { name: "Partnership", path: "/partnership" },
-  { name: "Get in touch", path: "/get-in-touch" },
+  { name: "Trading Services", path: null, subLinks:[
+    {name: "Trading Platform", path: "/trading-platform"},
+    {name: "Trading From Chart", path: "/trading-chart"},
+  ]},
+  { name: "Copy Trading", path: "/copy-trading", subLinks:null },
+  { name: "Trading Account", path: "/trading-account", subLinks:null },
+  { name: "Trading Tool", path: "/trading-tool", subLinks:null },
+  { name: "Learn n Earn", path: "/learn-n-earn", subLinks:null },
+  { name: "Partnership", path: "/partnership", subLinks:null },
+  { name: "Get in touch", path: "/get-in-touch", subLinks:null },
 ]);
 </script>
 <style>

@@ -3,7 +3,10 @@
     id="nav"
     class="navbar navbar-expand-lg navbar-light bg-white navbar-desktop"
   >
-    <div class="container-fluid nav-container h-100 me-4" style="max-width:1650px;">
+    <div
+      class="container-fluid nav-container h-100 me-4"
+      style="max-width: 1650px"
+    >
       <a class="navbar-brand" href="/"
         ><img
           src="https://www.unlimint.com/wp-content/themes/unlimint/assets/images/logo.svg"
@@ -11,9 +14,26 @@
       <div id="navbarTogglerDemo02" class="collapse navbar-collapse mx-2">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item" v-for="item in menus" :key="item.name">
-            <router-link class="nav-link" :to="item.path">
-              {{ item.name }}
-            </router-link>
+            <template v-if="item.subLinks">
+              <b-nav-item-dropdown
+                id="my-nav-dropdown"
+                :text="item.name"
+                toggle-class="nav-link-custom"
+                class="nav-dropdown"
+                right
+              >
+                <b-dropdown-item v-for="link in item.subLinks" :key="link.path">
+                  <router-link class="nav-link m-0" :to="link.path">
+                    {{ link.name }}
+                  </router-link>
+                </b-dropdown-item>
+              </b-nav-item-dropdown>
+            </template>
+            <template v-else>
+              <router-link class="nav-link" :to="item.path">
+                {{ item.name }}
+              </router-link>
+            </template>
           </li>
         </ul>
         <a class="nav-link open-account-btn me-4" href="#">Open Account</a>
@@ -28,6 +48,13 @@ const props = defineProps(["menus"]);
 </script>
 
 <style>
+.nav-dropdown,
+.nav-link-custom {
+  top: -3px;
+  font-size: 16px !important;
+  color: #000000 !important;
+  margin-left: 13px;
+}
 .demo-btn {
   width: 65px;
   line-height: 40px;
@@ -42,7 +69,7 @@ const props = defineProps(["menus"]);
     display: none;
   }
 }
-.navbar-expand-lg{
+.navbar-expand-lg {
   justify-content: center !important;
 }
 </style>
