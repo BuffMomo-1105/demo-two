@@ -4,7 +4,7 @@
       <div class="row" style="max-width: 1500px">
         <div class="col left-item text-start">
           <div class="heading">
-            <h1>Trading from Chart</h1>
+            <h1 style="color: #c9f73a">Trading from Chart</h1>
           </div>
           <div class="desc">
             <div class="arrow-icon-trading">
@@ -40,65 +40,7 @@
       </div>
     </section>
     <section class="chart-trade">
-      <svg
-        style="width: 100%; position: absolute; height: 71%"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1600 900"
-      >
-        <rect fill="#ffffff" width="1600" height="900" />
-        <defs>
-          <linearGradient
-            id="a"
-            x1="0"
-            x2="0"
-            y1="1"
-            y2="0"
-            gradientTransform="rotate(0,0.5,0.5)"
-          >
-            <stop offset="0" stop-color="#B7F729" />
-            <stop offset="1" stop-color="#C9F73A" />
-          </linearGradient>
-          <linearGradient
-            id="b"
-            x1="0"
-            x2="0"
-            y1="0"
-            y2="1"
-            gradientTransform="rotate(0,0.5,0.5)"
-          >
-            <stop offset="0" stop-color="#C9F73A" />
-            <stop offset="1" stop-color="#C9F73A" />
-          </linearGradient>
-        </defs>
-        <g fill="#FFF" fill-opacity="0" stroke-miterlimit="10">
-          <g stroke="url(#a)" stroke-width="15.839999999999998">
-            <path transform="" d="M1409 581 1450.35 511 1490 581z" />
-            <circle stroke-width="5.28" transform="" cx="500" cy="100" r="40" />
-            <path
-              transform=""
-              d="M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z"
-            />
-          </g>
-          <g stroke="url(#b)" stroke-width="4.8">
-            <path
-              transform=""
-              d="M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z"
-            />
-            <rect
-              stroke-width="10.56"
-              transform=""
-              x="1039"
-              y="709"
-              width="100"
-              height="100"
-            />
-            <path
-              transform=""
-              d="M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z"
-            />
-          </g>
-        </g>
-      </svg>
+      <custom-back />
       <div class="row" style="max-width: 1500px">
         <div class="col left-item text-start">
           <!-- <div class="heading">
@@ -437,7 +379,7 @@
           <div class="col col-xl-12 text-start">
             <div class="d-flex justify-content-start align-item-center">
               <div class="heading-number heading">
-                <h1>CapCreek Mobile</h1>
+                <h1 style="color: #c9f73a">CapCreek Mobile</h1>
               </div>
             </div>
 
@@ -472,6 +414,7 @@
       </div>
     </section>
     <section class="protection d-flex">
+      <custom-back />
       <div class="d-block protection-inner">
         <div class="d-flex flex-wrap text-start mb-4">
           <div class="heading-fluid mb-4 fluid-heading">
@@ -511,7 +454,7 @@
         </div>
       </div>
     </section>
-
+<!-- 
     <section
       class="volume-section d-flex text-start"
       style="background-color: #c9f73a"
@@ -546,8 +489,61 @@
           </div>
         </div>
       </div>
+    </section> -->
+    <section class="strategy trading-section">
+      <div class="fee" style="max-width: 1450px">
+        <div class="fee-heading">
+          <h1 class="theme-text" style="color: #c9f73a;">Trading</h1>
+        </div>
+        <div class="desc">
+          <div class="d-text pb-4 border-bottom border-dark">
+            Thanks to smart design and easy-to-use controls, trading can really
+            be done effectively on a mobile device. There are two ways to trade:
+            with QuickTrade or with order tickets.
+          </div>
+        </div>
+        <div class="card">
+          <div class="d-flex flex-wrap heading">
+            <div class="title-section mb-4">
+              <h2>QuickTrade</h2>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap">
+          <div class="desc quick-trade">
+            With a single tap on a QuickTrade button, a market order can be sent
+            straight away. This makes it easy to make quick decisions.
+            QuickTrade utilizes traders' preset preferences.
+          </div>
+          <div class="col right-item p-0 quick-trade-image right-image">
+          <div class="picture p-0">
+            <img src="../../assets/img/trading_symbol.png" alt="Equity Copy" />
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="card">
+          <div class="d-flex flex-wrap heading">
+            <div class="title-section mb-4">
+              <h2>Order Tickets</h2>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap">
+          <div class="desc quick-trade">
+            Order tickets, on the other hand, let traders place market, limit,
+            stop, and stop limit orders. The size of the order, the level of
+            protection, and the settings can all be changed using a simple order
+            form.
+          </div>
+          <div class="col right-item p-0 order-ticket-image right-image">
+          <div class="picture p-0">
+            <img src="../../assets/img/order-ticket-1.png" alt="Equity Copy" />
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
     </section>
-    <section class="chart-trade">
+    <section class="chart-trade" style="background-color: #c9f73a">
       <div class="row" style="max-width: 1500px">
         <div class="col left-item text-start">
           <div class="heading">
@@ -591,6 +587,9 @@
   </div>
 </template>
 <style>
+.quick-trade{
+  width: 40%;
+}
 .dropdown-item:active {
   color: #000000 !important;
   background-color: #ffffff !important;
@@ -645,6 +644,12 @@
   .image-one {
     width: 100%;
   }
+  .quick-trade{
+  width: 100%;
+}
+.chart-trade{
+  top:0px !important;
+}
 }
 @media (min-width: 870px) {
   .volume-img {
@@ -659,6 +664,13 @@
     top: -71%;
     left: 100px;
   }
+  .quick-trade-image{
+        top: -75px;
+  }
+  .order-ticket-image{
+    left: 35px;
+    top: 10px;
+  }
 }
 @media (min-width: 1800px) {
   .volume-inner {
@@ -669,6 +681,113 @@
   }
 }
 </style>
+<style>
+.trading-section {
+  /* top: 140px; */
+}
+.fee {
+  background-color: #000000;
+  padding: 64px 24px;
+  color: white;
+  text-align: left;
+}
+.fee .card {
+  background-color: #000000;
+  border: none;
+  border-bottom: 2px solid #c9f73a;
+  margin-bottom: 30px;
+}
+.fee-heading h1 {
+  font: 42px/44px "Nekst", sans-serif;
+  font-weight: 700;
+  margin-bottom: 55px;
+  letter-spacing: 1px;
+}
+.fee .card .heading .title-section {
+  width: 70%;
+  font: 24px/26px "Nekst", sans-serif;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  color: #c9f73a;
+  margin-left: 10px;
+}
+.fee .card .heading .img-section img {
+  width: 48px;
+}
+.fee .desc {
+  margin-bottom: 32px;
+  font: 20px/30px "Inter", sans-serif;
+  font-weight: 400;
+}
+@media (770px < width < 1280px) {
+  .fee-heading h1 {
+    font: 48px/52px "Nekst", sans-serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .fee .card .heading .img-section img {
+    width: 40px;
+  }
+  .fee .card .heading .title-section {
+    font: 32px/36px "Nekst", sans-serif;
+    font-weight: 700;
+    margin-bottom: 32px;
+    width: auto;
+    margin-left: 10px;
+  }
+  .fee .card {
+    margin-top: 48px;
+    padding-top: 48px;
+    padding-bottom: 25px;
+  }
+  .fee {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+    margin-left: 8.33333%;
+    padding: 80px 64px;
+  }
+  .fee .desc {
+    margin-bottom: 24px;
+    font: 20px/30px "Inter", sans-serif;
+    font-weight: 400;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 1280px) {
+  .fee-heading h1 {
+    font: 56px/62px "Nekst", sans-serif;
+    font-weight: 700;
+    margin-bottom: 56px;
+  }
+  .fee {
+    padding: 140px;
+  }
+  .fee .card .heading .img-section img {
+    width: 82px;
+  }
+  .fee .desc {
+    margin-left: 102px;
+    top: -30px;
+  }
+  .fee .card .heading .title-section {
+    margin-bottom: 5px;
+    align-items: normal;
+    margin-left: 20px;
+  }
+  .trading-section {
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-bottom: 25px;
+    margin-right: 24px;
+  }
+}
+</style>
+
 <style>
 .protection {
   top: 90px;

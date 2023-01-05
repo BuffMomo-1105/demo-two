@@ -10,7 +10,7 @@ import { ref } from "vue";
 const menus = ref([
   { name: "Trading Services", path: null, subLinks:[
     {name: "Trading Platform", path: "/trading-platform"},
-    {name: "Trading From Chart", path: "/trading-chart"},
+    {name: "Trading Chart", path: "/trading-chart"},
   ]},
   { name: "Copy Trading", path: "/copy-trading", subLinks:null },
   { name: "Trading Account", path: "/trading-account", subLinks:null },
