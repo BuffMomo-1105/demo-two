@@ -229,8 +229,7 @@
               </div>
             </div>
             <div class="protection-item">
-              Advanced Take Profit can be used to scale out of a position at A
-              huge variety of charts to suit different strategies. There are 6
+              A huge variety of charts to suit different strategies. There are 6
               zoom levels for an in-depth or birds-eye view of currency price
               action, with line studies automatically adjusting to the timeframe
               and zoom level. Charts feature 54 time frames for: Images below
@@ -251,7 +250,7 @@
                   <img src="../../assets/img/bar_charts.png" alt="" />
                   Bar Charts
                 </div>
-                <div>
+                <div class="image-one">
                   <img src="../../assets/img/HLC_chart.png" alt="" />
                   HLC Chart
                 </div>
@@ -596,7 +595,7 @@
   color: #000000 !important;
   background-color: #ffffff !important;
   opacity: 0.5;
-    border-bottom: 2px solid #c9f73a;
+  border-bottom: 2px solid #c9f73a;
 }
 /* animation */
 
