@@ -18,6 +18,19 @@ body {
   text-align: left;
   background-color: #fff;
 }
+.black-color{
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+.theme-color{
+  background-color: #c9f73a !important;
+}
+.white-color{
+  background-color: #ffffff !important;
+}
+.grey-color{
+  background-color: #f2f2f2 !important;
+}
 .page-home__promo {
   position: relative;
   background: #c9f73a;
