@@ -48,20 +48,7 @@
           </div> -->
           <div class="desc">
             <div class="arrow-icon-trading">
-              <svg
-                width="46"
-                height="22"
-                viewBox="0 0 46 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M34.7071 -0.00012207L44.7071 9.99988L45.4142 10.707L44.7071 11.4141L34.7071 21.4141L33.2929 19.9999L41.5858 11.707H0V9.70698H41.5858L33.2929 1.41409L34.7071 -0.00012207Z"
-                  fill="#C9F73A"
-                ></path>
-              </svg>
+              <arrow-theme />
             </div>
             <div class="d-text mb-4">
               Existing Orders and Positions can be modified at any moment by
@@ -454,7 +441,7 @@
         </div>
       </div>
     </section>
-<!-- 
+    <!-- 
     <section
       class="volume-section d-flex text-start"
       style="background-color: #c9f73a"
@@ -493,7 +480,7 @@
     <section class="strategy trading-section">
       <div class="fee" style="max-width: 1450px">
         <div class="fee-heading">
-          <h1 class="theme-text" style="color: #c9f73a;">Trading</h1>
+          <h1 class="theme-text" style="color: #c9f73a">Trading</h1>
         </div>
         <div class="desc">
           <div class="d-text pb-4 border-bottom border-dark">
@@ -509,17 +496,20 @@
             </div>
           </div>
           <div class="d-flex flex-wrap">
-          <div class="desc quick-trade">
-            With a single tap on a QuickTrade button, a market order can be sent
-            straight away. This makes it easy to make quick decisions.
-            QuickTrade utilizes traders' preset preferences.
+            <div class="desc quick-trade">
+              With a single tap on a QuickTrade button, a market order can be
+              sent straight away. This makes it easy to make quick decisions.
+              QuickTrade utilizes traders' preset preferences.
+            </div>
+            <div class="col right-item p-0 quick-trade-image right-image">
+              <div class="picture p-0">
+                <img
+                  src="../../assets/img/trading_symbol.png"
+                  alt="Equity Copy"
+                />
+              </div>
+            </div>
           </div>
-          <div class="col right-item p-0 quick-trade-image right-image">
-          <div class="picture p-0">
-            <img src="../../assets/img/trading_symbol.png" alt="Equity Copy" />
-          </div>
-        </div>
-      </div>
         </div>
         <div class="card">
           <div class="d-flex flex-wrap heading">
@@ -528,18 +518,21 @@
             </div>
           </div>
           <div class="d-flex flex-wrap">
-          <div class="desc quick-trade">
-            Order tickets, on the other hand, let traders place market, limit,
-            stop, and stop limit orders. The size of the order, the level of
-            protection, and the settings can all be changed using a simple order
-            form.
+            <div class="desc quick-trade">
+              Order tickets, on the other hand, let traders place market, limit,
+              stop, and stop limit orders. The size of the order, the level of
+              protection, and the settings can all be changed using a simple
+              order form.
+            </div>
+            <div class="col right-item p-0 order-ticket-image right-image">
+              <div class="picture p-0">
+                <img
+                  src="../../assets/img/order-ticket-1.png"
+                  alt="Equity Copy"
+                />
+              </div>
+            </div>
           </div>
-          <div class="col right-item p-0 order-ticket-image right-image">
-          <div class="picture p-0">
-            <img src="../../assets/img/order-ticket-1.png" alt="Equity Copy" />
-          </div>
-        </div>
-      </div>
         </div>
       </div>
     </section>
@@ -587,7 +580,7 @@
   </div>
 </template>
 <style>
-.quick-trade{
+.quick-trade {
   width: 40%;
 }
 .dropdown-item:active {
@@ -644,12 +637,12 @@
   .image-one {
     width: 100%;
   }
-  .quick-trade{
-  width: 100%;
-}
-.chart-trade{
-  top:0px !important;
-}
+  .quick-trade {
+    width: 100%;
+  }
+  .chart-trade {
+    top: 0px !important;
+  }
 }
 @media (min-width: 870px) {
   .volume-img {
@@ -664,10 +657,10 @@
     top: -71%;
     left: 100px;
   }
-  .quick-trade-image{
-        top: -75px;
+  .quick-trade-image {
+    top: -75px;
   }
-  .order-ticket-image{
+  .order-ticket-image {
     left: 35px;
     top: 10px;
   }

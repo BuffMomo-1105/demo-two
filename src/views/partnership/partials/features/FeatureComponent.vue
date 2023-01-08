@@ -62,6 +62,12 @@ const props = defineProps({
     font: 48px/52px "Nekst", sans-serif;
     font-weight: 700;
   }
+  .feature-heading h2,
+  .feature-desc {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+    margin-left: 8.33333%;
+  }
   .feature-text {
     width: 80%;
   }
@@ -72,7 +78,8 @@ const props = defineProps({
 @media (min-width: 1280px) {
   .features {
     padding: 140px 12px;
-    padding-left: 10%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
   .feature-heading h2 {
     font: 56px/62px "Nekst", sans-serif;
@@ -85,6 +92,15 @@ const props = defineProps({
   }
   .promo-img {
     width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .partner-page h1,
+  .partner-sub-heading,
+  .partner-button {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+    margin-left: 8.33333%;
   }
 }
 </style>

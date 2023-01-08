@@ -5,7 +5,7 @@
         <h1>Join Us on the Journey to Tomorrow's Wonders Today!</h1>
         <div class="partner-sub-heading">Become a B2pip partner today</div>
         <div class="partner-button mt-4">
-          <button>Become a partner</button>
+          <button @click="scrollToForm">Become a partner</button>
         </div>
       </div>
     </section>
@@ -25,13 +25,225 @@
     <Features />
     <!-- Feature Section -->
     <StartEarning />
+    <FeatureComponent bg-color="black-color" arrow-component="arrow-theme">
+      <template #header> Auto pay-outs for partners </template>
+      <template #description>
+        We pay your profit daily into your account and you can access your money
+        instantly, whenever you want.
+      </template>
+      <template #image>
+        <img src="../../assets/img/payouts.png" alt="" class="promo-img m-2" />
+      </template>
+    </FeatureComponent>
+    <InterfaceCarousel />
+    <DosDont />
+    <!-- <section class="ethical-practice text-start d-block">
+      <div class="device-block">
+        <div class="w-75 m-auto black-color">
+          <div class="feature-heading text-center">
+            <h2 style="color: #c9f73a">Ethical Transparent Practice</h2>
+          </div>
+          <div class="feature-text w-75 m-auto">
+            <p>
+              In accordance with the Revshare programme introducing brokers get
+              paid only for the customer’s trading activity after a broker has
+              already received the profit for trading.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <div class="practice">
+      "In accordance with the Revshare programme introducing brokers get paid
+      only for the customer’s trading activity after a broker has already
+      received the profit for trading."
+    </div>
+    <section class="contact-form" ref="contactForm">
+      <div class="form-inner">
+        <div class="contact-heading">
+          If you haven't found the answer to your question, feel free to contact
+          our support.
+        </div>
+        <form action="" class="contact-inner">
+          <input
+            type="text"
+            class="contact-input w-100"
+            v-modal="form.name"
+            placeholder="Full Name"
+          />
+          <input
+            type="email"
+            class="contact-input w-100"
+            v-modal="form.email"
+            placeholder="Email"
+          />
+          <input
+            type="number"
+            class="contact-input w-100"
+            v-modal="form.number"
+            placeholder="Phone Number"
+          />
+          <input
+            type="text"
+            class="contact-input w-100"
+            v-modal="form.region"
+            placeholder="Region"
+          />
+          <input
+            type="text"
+            class="contact-input w-100"
+            v-modal="form.message"
+            placeholder="Message"
+          />
+          <b-form-checkbox
+            class="contact-checkbox"
+            id="checkbox-1"
+            v-model="checked"
+            name="checkbox-1"
+            value="true"
+            :unchecked-value="false"
+          >
+            <p class="checkbox-text">I accept the terms and policy.</p>
+          </b-form-checkbox>
+          <div class="contact-form-button mt-4 d-flex">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </div>
 </template>
 <script setup>
+import { ref } from "vue";
 import Icon from "./partials/features/Icon.vue";
 import Features from "./partials/features/index.vue";
 import StartEarning from "./partials/start-earning/StartEarning.vue";
+import DosDont from "./partials/dos/DosDont.vue";
+import InterfaceCarousel from "./partials/interfaces/InterfaceCarousel.vue";
+import FeatureComponent from "./partials/features/FeatureComponent.vue";
+
+const form = ref({
+  name: "",
+  email: "",
+  number: "",
+  region: "",
+  message: "",
+  checked: false,
+});
+const contactForm = ref(null);
+function scrollToForm() {
+  const el = contactForm.value;
+  el.scrollIntoView({ behavior: "smooth" });
+}
 </script>
+
+<style>
+.form-inner {
+  max-width: 1400px;
+}
+.contact-form-button button {
+  width: 100%;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.24s;
+  opacity: 1;
+  width: 100%;
+  padding: 16px 40px;
+  font: 20px/30px "Inter", sans-serif;
+  font-weight: 400;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid transparent;
+}
+.contact-form-button {
+  position: relative;
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .contact-form-button button {
+    width: auto;
+  }
+  .contact-form-button {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .contact-heading {
+    width: 75%;
+    margin: auto;
+    font: 32px/48px "Inter", sans-serif;
+    font-weight: 600;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+  }
+  .contact-inner {
+    width: 40%;
+    margin: auto;
+  }
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  top: 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(201, 247, 58, 0) 52.6%,
+    rgba(201, 247, 58, 0.5) 100%
+  );
+  padding: 1rem;
+  padding-bottom: 150px;
+}
+.contact-heading {
+  text-align: left;
+  font: 20px/30px "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  padding-left: 15%;
+}
+.contact-inner {
+  width: 80%;
+  margin: auto;
+}
+.contact-input:focus {
+  outline: none;
+}
+.contact-input {
+  border: none !important;
+  border-bottom: 1px solid black !important;
+  margin: 1em;
+  background: transparent;
+}
+input:focus {
+  border: none;
+}
+.contact-checkbox {
+  margin: 1em;
+  top: 3px;
+  left: 17px;
+}
+.checkbox-text {
+  margin: 1em;
+}
+.contact-form label {
+  display: flex;
+}
+</style>
+<style>
+.practice {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #c9f73a;
+  background-color: black;
+}
+</style>
 <style>
 .key-feature {
   display: flex;
