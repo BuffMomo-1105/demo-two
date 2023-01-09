@@ -71,18 +71,23 @@
                 :to="link.path"
                 v-for="link in item.subLinks"
                 :key="link.path"
+                @click="showNav"
               >
                 {{ link.name }}
               </router-link>
             </b-collapse>
           </template>
           <template v-else>
-            <router-link class="nav-link nav-link-mbl" :to="item.path">
+            <router-link
+              class="nav-link nav-link-mbl"
+              :to="item.path"
+              @click="showNav"
+            >
               {{ item.name }}
             </router-link>
           </template>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" @click="showNav">
           <a class="nav-link nav-link-mbl" href="#">Login</a>
         </li>
       </ul>

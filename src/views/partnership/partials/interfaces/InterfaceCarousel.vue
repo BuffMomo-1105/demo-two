@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { FreeMode, Pagination } from "swiper";
+import { FreeMode, Pagination, Autoplay } from "swiper";
 
 import Dash from "./icons/Dash.vue";
 </script>
@@ -22,10 +22,10 @@ import Dash from "./icons/Dash.vue";
           clickable: true,
         }"
         :autoplay="{
-          delay: 1000,
+          delay: 2000,
           disableOnInteraction: false,
         }"
-        :modules="[FreeMode, Pagination]"
+        :modules="[FreeMode, Pagination, Autoplay]"
         class="mySwiper"
         :centeredSlides="true"
         :breakpoints="{
