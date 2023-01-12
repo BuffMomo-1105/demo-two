@@ -28,7 +28,7 @@
       allowfullscreen
       class="home-video"
     ></iframe>
-    <div style="max-height: 1080px; display: flex; justify-content: center;">
+    <div style="max-height: 1080px; display: flex; justify-content: center">
       <div style="max-width: 1500px">
         <h1 class="home-slogan home-two-slogan">
           Do you have any idea <br />how you'll pay for your trade?
@@ -87,7 +87,7 @@
   <!-- Section four ends -->
 
   <!-- Section five starts -->
-  <div class="section-five text-start pb-4" style="max-height: 1080px">
+  <div class="section-five text-start pb-4" >
     <div style="max-width: 1500px">
       <h1 class="section-five-heading">
         What is your choice of trading account?
@@ -95,7 +95,7 @@
       <div class="row section-five-card">
         <div data-aos="fade-up" class="col card-first">
           <img
-            src="https://www.unlimint.com/wp-content/themes/unlimint/assets/images/home-products/phone.png"
+            src="../../assets/img/phone.png"
             alt=""
             class="section-three-img"
           /><span class="inner-text">0.6P</span>
@@ -107,7 +107,7 @@
 
         <div data-aos="fade-up" data-aos-delay="200" class="col card-second">
           <img
-            src="https://www.unlimint.com/wp-content/themes/unlimint/assets/images/home-products/earth.png"
+            src="../../assets/img/earth.png"
             alt=""
             class="section-three-img"
           />
@@ -123,7 +123,7 @@
   <!-- Section five starts -->
 
   <!-- Section three starts -->
-  <Projection>
+  <Projection style="top: 5rem">
     <template #slogan-left>
       No mark-up spread<br />Trade with Trust<br />Upto 1:500 leverage<br />
     </template>
@@ -150,44 +150,4 @@ onMounted(() => {
 
 <style>
 @import "../../assets/styles/home.css";
-.home-video {
-  width: 75%;
-  margin: auto;
-  position: relative;
-  left: 14%;
-  bottom: 20vh;
-  height: 80vh;
-  max-width: 1500px;
-}
-
-@media (max-width: 1430px) {
-  .home-video {
-    bottom: 0;
-  }
-}
-@media (max-width: 650px) {
-  .home-video {
-    width: 100%;
-    left: 0;
-    height: 250px;
-  }
-}
-@media (min-width: 2000px) {
-  .home-video {
-    width: 51%;
-    margin: auto;
-    position: relative;
-    left: 30%;
-    bottom: 20vh;
-    height: 80vh;
-    max-width: 1095px;
-    max-height: 650px;
-  }
-  .home-two-info{
-    width: auto;
-  }
-  .card-second {
-    margin-right: 5%;
-}
-}
 </style>

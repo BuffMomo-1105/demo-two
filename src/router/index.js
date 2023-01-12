@@ -11,7 +11,9 @@ const routes = [
     path: "/copy-trading",
     name: "Copy Trading",
     component: () =>
-      import(/* webpackChunkName: "copytrading" */ "../views/copy-trading/index.vue"),
+      import(
+        /* webpackChunkName: "copytrading" */ "../views/copy-trading/index.vue"
+      ),
   },
   {
     path: "/get-in-touch",
@@ -41,19 +43,25 @@ const routes = [
     path: "/trading-account",
     name: "Trading Account",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/trading-account/index.vue"),
+      import(
+        /* webpackChunkName: "about" */ "../views/trading-account/index.vue"
+      ),
   },
   {
     path: "/trading-platform",
     name: "Trading Platform",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/trading-platform/index.vue"),
+      import(
+        /* webpackChunkName: "about" */ "../views/trading-platform/index.vue"
+      ),
   },
   {
     path: "/trading-chart",
     name: "Trading Chart",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/trading-chart/index.vue"),
+      import(
+        /* webpackChunkName: "about" */ "../views/trading-chart/index.vue"
+      ),
   },
   {
     path: "/trading-tool",
@@ -61,9 +69,27 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/trading-tool/index.vue"),
   },
+  // {
+  //   path: "/forex-basics",
+  //   name: "Forex Basics",
+  //   component: () =>
+  //     import(
+  //       /* webpackChunkName: "about" */ "../views/learn/components/forex-basics/ForexBasics.vue"
+  //     ),
+  // },
+  {
+    path: "/policy",
+    name: "Policy",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/policy/PolicyPage.vue"),
+  },
 ];
 
 const router = createRouter({
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0 }
+  },
   history: createWebHistory(),
   routes,
 });

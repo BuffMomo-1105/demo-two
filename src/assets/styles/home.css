@@ -91,7 +91,7 @@
 .card-circle {
   padding: 0.7rem;
   margin-right: 5px;
-  background-color:#c9f73a;
+  background-color: #c9f73a;
   border-radius: 50%;
 }
 @media (max-width: 800px) {
@@ -117,9 +117,9 @@
   }
   .card-body {
     position: relative !important;
-    top: 50% !important;
+    top: 55% !important;
     transform: translateY(-50%) !important;
-    padding: 1rem;
+    padding: 0;
   }
 }
 @media (min-width: 800px) and (max-width: 1200px) {
@@ -235,5 +235,45 @@
 @media (min-width: 800px) {
   .slogan-top {
     font: 77px/70px "Nekst", sans-serif;
+  }
+}
+.home-video {
+  width: 75%;
+  margin: auto;
+  position: relative;
+  left: 14%;
+  bottom: 20vh;
+  height: 80vh;
+  max-width: 1500px;
+}
+
+@media (max-width: 1430px) {
+  .home-video {
+    bottom: 0;
+  }
+}
+@media (max-width: 650px) {
+  .home-video {
+    width: 100%;
+    left: 0;
+    height: 250px;
+  }
+}
+@media (min-width: 2000px) {
+  .home-video {
+    width: 51%;
+    margin: auto;
+    position: relative;
+    left: 30%;
+    bottom: 20vh;
+    height: 80vh;
+    max-width: 1095px;
+    max-height: 650px;
+  }
+  .home-two-info {
+    width: auto;
+  }
+  .card-second {
+    margin-right: 5%;
   }
 }

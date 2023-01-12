@@ -8,16 +8,29 @@ import MobileNav from "./components/MobileNav.vue";
 import DesktopNav from "./components/DesktopNav.vue";
 import { ref } from "vue";
 const menus = ref([
-  { name: "Trading Services", path: null, subLinks:[
-    {name: "Trading Platform", path: "/trading-platform"},
-    {name: "Trading Chart", path: "/trading-chart"},
-  ]},
-  { name: "Copy Trading", path: "/copy-trading", subLinks:null },
-  { name: "Trading Account", path: "/trading-account", subLinks:null },
-  { name: "Trading Tool", path: "/trading-tool", subLinks:null },
-  { name: "Learn n Earn", path: "/learn-n-earn", subLinks:null },
-  { name: "Partnership", path: "/partnership", subLinks:null },
-  { name: "Get in touch", path: "/get-in-touch", subLinks:null },
+  {
+    name: "Trading Services",
+    path: null,
+    subLinks: [
+      { name: "Trading Platform", path: "/trading-platform" },
+      { name: "Trading Chart", path: "/trading-chart" },
+    ],
+  },
+  { name: "Copy Trading", path: "/copy-trading", subLinks: null },
+  { name: "Trading Account", path: "/trading-account", subLinks: null },
+  { name: "Trading Tool", path: "/trading-tool", subLinks: null },
+  {
+    name: "Learn & Earn",
+    path: "null",
+    subLinks: [
+      { name: "Webinars", path: "/webinars" },
+      { name: "Forex Basics", path: "/forex-basics" },
+      { name: "Platform Tutorials", path: "/platform-tutorials" },
+      { name: "FAQ", path: "/faq" },
+    ],
+  },
+  { name: "Partnership", path: "/partnership", subLinks: null },
+  { name: "Get in touch", path: "/get-in-touch", subLinks: null },
 ]);
 </script>
 <style>
@@ -49,18 +62,24 @@ const menus = ref([
 }
 
 .navbar-brand {
-  display: block;
+  display: inline;
   width: 140px;
   height: 28px;
   margin-right: 71px !important;
 }
-@media (max-width:770px){
-  .navbar-brand{
-    left:-24px;
+@media (max-width: 770px) {
+  .navbar-brand {
+    left: -10px;
+    top: -15px;
   }
 }
 .list-group-item {
   font-size: 16px;
+}
+@media (min-width: 1280px) {
+  .navbar-brand {
+    top: -50px;
+  }
 }
 @media (max-width: 1430px) {
   .navbar-desktop {

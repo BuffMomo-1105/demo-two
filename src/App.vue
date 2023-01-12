@@ -1,9 +1,11 @@
 <template>
   <NavBar></NavBar>
   <router-view />
+  <Footer />
 </template>
 <script setup lang="ts">
 import NavBar from "./components/nav/index.vue";
+import Footer from "./components/footer/Footer.vue";
 </script>
 <style>
 #app {

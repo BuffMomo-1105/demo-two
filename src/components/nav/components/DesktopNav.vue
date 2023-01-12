@@ -8,8 +8,7 @@
       style="max-width: 1650px"
     >
       <a class="navbar-brand" href="/"
-        ><img
-          src="https://www.unlimint.com/wp-content/themes/unlimint/assets/images/logo.svg"
+        ><img src="../../../assets/img/logo.svg"
       /></a>
       <div id="navbarTogglerDemo02" class="collapse navbar-collapse mx-2">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">

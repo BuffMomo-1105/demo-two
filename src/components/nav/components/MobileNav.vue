@@ -8,11 +8,13 @@
       <div class="d-flex position-static">
         <div class="me-auto">
           <a class="navbar-brand" href="/"
-            ><img
-              src="https://www.unlimint.com/wp-content/themes/unlimint/assets/images/logo.svg"
+            ><img src="../../../assets/img/logo.svg"
           /></a>
         </div>
-        <div class="d-flex position-absolute end-0 me-4 mbl-nav-second">
+        <div
+          class="d-flex position-absolute end-0 me-4 mbl-nav-second"
+          style="top: 26px"
+        >
           <a class="nav-link open-account-btn" href="#">Open Account</a>
           <div class="mbl-demo-btn ms-2">
             <a class="nav-link demo-btn" href="#">Demo</a>

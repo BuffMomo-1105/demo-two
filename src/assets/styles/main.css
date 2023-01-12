@@ -25,6 +25,9 @@ body {
 .theme-color{
   background-color: #c9f73a !important;
 }
+.theme-text{
+  color: #c9f73a !important;
+}
 .white-color{
   background-color: #ffffff !important;
 }

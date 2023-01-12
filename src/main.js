@@ -15,11 +15,13 @@ import "aos/dist/aos.css";
 import CustomBackground from "./components/icons/CustomBackground.vue";
 import ArrowBlack from "./components/icons/ArrowBlack.vue";
 import ArrowTheme from "./components/icons/ArrowTheme.vue";
+import Dash from "./components/icons/Dash.vue"
 
 const app = createApp(App);
 app.component("custom-back", CustomBackground);
 app.component("arrow-black", ArrowBlack);
 app.component("arrow-theme", ArrowTheme);
+app.component("dash", Dash);
 app.use(createPinia());
 app.use(router);
 app.use(BootstrapVue3);
