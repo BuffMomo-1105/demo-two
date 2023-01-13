@@ -67,10 +67,13 @@ const menus = ref([
   height: 28px;
   margin-right: 71px !important;
 }
+.navbar-brand img {
+  width: 140px;
+}
 @media (max-width: 770px) {
   .navbar-brand {
-    left: -10px;
-    top: -15px;
+    left: -35px;
+    top: -30px;
   }
 }
 .list-group-item {
@@ -78,7 +81,7 @@ const menus = ref([
 }
 @media (min-width: 1280px) {
   .navbar-brand {
-    top: -50px;
+    top: -71px;
   }
 }
 @media (max-width: 1430px) {

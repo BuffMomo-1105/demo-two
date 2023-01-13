@@ -1,7 +1,15 @@
 <template>
   <div class="d-flex justify-content-center">
     <div class="policy-page text-start">
-      <div class="policy-heading">
+      <div
+        class="policy-heading"
+        style="
+          background-color: black;
+          padding-top: 3rem;
+          padding-bottom: 2rem;
+          margin-bottom: 2rem;
+        "
+      >
         <h2>KYC / AML Policies</h2>
       </div>
       <div class="policy-sub-heading">
@@ -111,7 +119,7 @@
           sourced from named countries.
         </p>
       </div>
-      <hr>
+      <hr />
       <!-- Individual clients -->
       <div class="policy-sub-heading">
         <h3>Individual clients</h3>
@@ -150,7 +158,7 @@
           not be older than 3 months from the filing date.
         </p>
       </div>
-      <hr>
+      <hr />
       <!-- Corporate client -->
       <div class="policy-sub-heading">
         <h3>Corporate clients</h3>
@@ -306,5 +314,6 @@
 .policy-desc p {
   font: 16px/24px "Inter", sans-serif;
   font-weight: 400;
+  text-align: justify;
 }
 </style>
