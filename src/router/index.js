@@ -69,14 +69,14 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/trading-tool/index.vue"),
   },
-  // {
-  //   path: "/forex-basics",
-  //   name: "Forex Basics",
-  //   component: () =>
-  //     import(
-  //       /* webpackChunkName: "about" */ "../views/learn/components/forex-basics/ForexBasics.vue"
-  //     ),
-  // },
+  {
+    path: "/forex-basics",
+    name: "Forex Basics",
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/learn/components/forex-basics/ForexBasics.vue"
+      ),
+  },
   {
     path: "/policy",
     name: "Policy",

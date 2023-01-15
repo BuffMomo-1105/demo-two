@@ -1,0 +1,169 @@
+<script setup>
+import arrow from "../../arrow.vue";
+import { useRoute } from "vue-router";
+import { computed, ref,watch } from "vue";
+import { useEventStore } from "../../../../../stores";
+
+const props = defineProps({
+  currentTab: { default: 0, required: false },
+  currentContent: { type: Object, required: true },
+});
+const emits = defineEmits([
+  "updateTab",
+  "showMobileContent",
+  "update:currentTab",
+]);
+const route = useRoute();
+const eventStore = useEventStore();
+
+const isAdmin = computed(() => {
+  return route.fullPath.includes("forex");
+});
+const showWarning = ref(false);
+
+function deleteForex() {
+  eventStore.deleteForexBasic(props.currentTab);
+  emits("update:currentTab", 0);
+}
+const currentData=ref({
+    title:'',
+    vedioUrl:'',
+    body:'',
+})
+
+watch(()=>{})
+</script>
+<template>
+  <div class="tab-content">
+    <QuillEditor theme="snow" contentType="html" v-model:content="title" placeholder="Enter Anything..."/>
+    <div @click="emits('showMobileContent', 0)" class="back-btn">
+      <arrow /><a class="ms-2 previous-lesson">Back</a>
+    </div>
+    <div class="position-absolute menu-icon">
+      <!-- <i class="fas fa-trash-alt fa-2x"></i> -->
+      <b-dropdown
+        size="lg"
+        variant="link"
+        toggle-class="text-decoration-none"
+        no-caret
+      >
+        <template #button-content>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512">
+            <path
+              d="M64 360c30.9 0 56 25.1 56 56s-25.1 56-56 56s-56-25.1-56-56s25.1-56 56-56zm0-160c30.9 0 56 25.1 56 56s-25.1 56-56 56s-56-25.1-56-56s25.1-56 56-56zM120 96c0 30.9-25.1 56-56 56S8 126.9 8 96S33.1 40 64 40s56 25.1 56 56z"
+            />
+          </svg>
+        </template>
+        <b-dropdown-item href="#" @click="showWarning = true">Delete</b-dropdown-item>
+        <b-dropdown-item href="#">Edit</b-dropdown-item>
+      </b-dropdown>
+    </div>
+    <div>
+      <h2><strong>Forex basics: video course</strong></h2>
+    </div>
+    <div>
+      <p>
+        This video course for beginners will guide you through the main aspects
+        of Forex trading. You will learn how the Forex market works and how you
+        can profit from it. Study the essential Forex terminology, learn how to
+        take your first steps in trading, and start developing your trading
+        strategy.
+      </p>
+    </div>
+    <div>
+      <h3>
+        <strong>Lesson {{ currentTab + 1 }} </strong>
+      </h3>
+    </div>
+    <div class="d-flex">
+      <p class="me-4">{{ currentContent.title }}</p>
+      <i class="fas fa-edit"></i>
+    </div>
+    <div>
+      <iframe
+        width="560"
+        class="vedio-lesson"
+        height="315"
+        :src="currentContent.content.vedioUrl"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div>
+      <div v-html="currentContent.content.body"></div>
+      <!-- <div><p>In this lesson, you will learn:</p></div>
+            <div>
+              <ul>
+                <li>what Forex is and how you can earn on it</li>
+                <li>what Forex is and how you can earn on it</li>
+                <li>what Forex is and how you can earn on it</li>
+                <li>what Forex is and how you can earn on it</li>
+              </ul>
+            </div> -->
+    </div>
+    <div class="d-flex justify-content-between mt-4 pt-4">
+      <div @click="emits('updateTab', 'prev')">
+        <arrow /><a class="ms-2 previous-lesson">Previous lessson</a>
+      </div>
+      <div @click="emits('updateTab', 'next')">
+        <a class="me-2 next-lesson">Next lessson</a>
+        <arrow style="transform: rotate(180deg)" />
+      </div>
+    </div>
+  </div>
+  <b-modal
+    v-model="showWarning"
+    centered
+    cancel-title="No"
+    ok-title="Yes"
+    title="Warning!!!"
+    size="sm"
+    button-size="sm"
+    modal-class="delete-modal"
+    @ok="deleteForex"
+  >
+    Do you want delete this data?
+  </b-modal>
+</template>
+<style>
+.back-btn {
+  margin: 0px 0px 20px 0px;
+  color: #000;
+}
+.back-btn a {
+  color: #000;
+  font-size: 16px;
+}
+.back-btn a:hover {
+  color: #c9f73a;
+}
+.menu-icon {
+  top: 10px;
+  right: 30px;
+  width: 7px;
+  cursor: pointer;
+}
+.menu-icon:hover {
+  color: #c9f73a;
+}
+
+.delete-modal {
+  text-align: center !important;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: black;
+  font-family: Plus Jakarta Sans, system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+}
+.menu-icon .btn .btn-content{
+    width: 7px;
+}
+@media (min-width: 768px) {
+  .back-btn {
+    display: none;
+  }
+}
+</style>

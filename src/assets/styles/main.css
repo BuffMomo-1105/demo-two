@@ -18,20 +18,23 @@ body {
   text-align: left;
   background-color: #fff;
 }
-.black-color{
+p {
+  text-align: justify;
+}
+.black-color {
   background-color: #000000 !important;
   color: #ffffff !important;
 }
-.theme-color{
+.theme-color {
   background-color: #c9f73a !important;
 }
-.theme-text{
+.theme-text {
   color: #c9f73a !important;
 }
-.white-color{
+.white-color {
   background-color: #ffffff !important;
 }
-.grey-color{
+.grey-color {
   background-color: #f2f2f2 !important;
 }
 .page-home__promo {
@@ -90,7 +93,7 @@ section {
   }
 }
 
-section{
+section {
   display: flex;
   justify-content: center;
 }
