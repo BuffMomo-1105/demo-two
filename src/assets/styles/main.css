@@ -17,6 +17,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  overflow: auto !important;
 }
 p {
   text-align: justify;

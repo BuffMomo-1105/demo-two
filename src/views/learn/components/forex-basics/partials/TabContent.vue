@@ -1,17 +1,19 @@
 <script setup>
 import arrow from "../../arrow.vue";
 import { useRoute } from "vue-router";
-import { computed, ref,watch } from "vue";
+import { computed, ref, watch } from "vue";
 import { useEventStore } from "../../../../../stores";
 
 const props = defineProps({
   currentTab: { default: 0, required: false },
   currentContent: { type: Object, required: true },
+  isEdit: { required: false, default: false },
 });
 const emits = defineEmits([
   "updateTab",
   "showMobileContent",
   "update:currentTab",
+  "update:isEdit",
 ]);
 const route = useRoute();
 const eventStore = useEventStore();
@@ -25,17 +27,27 @@ function deleteForex() {
   eventStore.deleteForexBasic(props.currentTab);
   emits("update:currentTab", 0);
 }
-const currentData=ref({
-    title:'',
-    vedioUrl:'',
-    body:'',
-})
-
-watch(()=>{})
+const currentData = ref({
+  title: "",
+  vedioUrl: "",
+  body: "",
+  mainHeading: "",
+});
+function updateForex() {
+  eventStore.updateForex(props.currentTab, currentData.value);
+  emits("update:isEdit", false);
+}
+watch(
+  () => props.isEdit,
+  (val) => {
+    if (val) {
+      currentData.value = props.currentContent;
+    }
+  }
+);
 </script>
 <template>
   <div class="tab-content">
-    <QuillEditor theme="snow" contentType="html" v-model:content="title" placeholder="Enter Anything..."/>
     <div @click="emits('showMobileContent', 0)" class="back-btn">
       <arrow /><a class="ms-2 previous-lesson">Back</a>
     </div>
@@ -54,21 +66,35 @@ watch(()=>{})
             />
           </svg>
         </template>
-        <b-dropdown-item href="#" @click="showWarning = true">Delete</b-dropdown-item>
+        <b-dropdown-item href="#" @click="showWarning = true"
+          >Delete</b-dropdown-item
+        >
         <b-dropdown-item href="#">Edit</b-dropdown-item>
       </b-dropdown>
     </div>
-    <div>
-      <h2><strong>Forex basics: video course</strong></h2>
+    <div v-if="isEdit" class="mt-4">
+      <label for="main-heading" class="label">Main Heading:</label>
+      <QuillEditor
+        theme="snow"
+        contentType="html"
+        v-model:content="currentData.mainHeading"
+        placeholder="Enter Anything..."
+      />
     </div>
-    <div>
-      <p>
-        This video course for beginners will guide you through the main aspects
-        of Forex trading. You will learn how the Forex market works and how you
-        can profit from it. Study the essential Forex terminology, learn how to
-        take your first steps in trading, and start developing your trading
-        strategy.
-      </p>
+    <div v-else>
+      <div v-html="currentContent.mainHeading"></div>
+      <!-- <div>
+        <h2><strong>Forex basics: video course</strong></h2>
+      </div>
+      <div>
+        <p>
+          This video course for beginners will guide you through the main
+          aspects of Forex trading. You will learn how the Forex market works
+          and how you can profit from it. Study the essential Forex terminology,
+          learn how to take your first steps in trading, and start developing
+          your trading strategy.
+        </p>
+      </div> -->
     </div>
     <div>
       <h3>
@@ -76,15 +102,32 @@ watch(()=>{})
       </h3>
     </div>
     <div class="d-flex">
-      <p class="me-4">{{ currentContent.title }}</p>
-      <i class="fas fa-edit"></i>
+      <p class="me-4 mt-4" v-if="isEdit">
+        <label for="title" class="label">Title:</label>
+        <b-form-textarea
+          id="textarea-small"
+          size="sm"
+          v-model="currentData.title"
+          placeholder="Enter Title"
+        ></b-form-textarea>
+      </p>
+      <p class="me-4" v-else>{{ currentContent.title }}</p>
     </div>
-    <div>
+    <div v-if="isEdit">
+      <label for="url" class="label">Vedio URL:</label>
+      <b-form-textarea
+        id="textarea-small"
+        size="sm"
+        v-model="currentData.vedioUrl"
+        placeholder="Enter Vedio Url"
+      ></b-form-textarea>
+    </div>
+    <div v-else>
       <iframe
         width="560"
         class="vedio-lesson"
         height="315"
-        :src="currentContent.content.vedioUrl"
+        :src="currentContent.vedioUrl"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -92,18 +135,22 @@ watch(()=>{})
       ></iframe>
     </div>
     <div>
-      <div v-html="currentContent.content.body"></div>
-      <!-- <div><p>In this lesson, you will learn:</p></div>
-            <div>
-              <ul>
-                <li>what Forex is and how you can earn on it</li>
-                <li>what Forex is and how you can earn on it</li>
-                <li>what Forex is and how you can earn on it</li>
-                <li>what Forex is and how you can earn on it</li>
-              </ul>
-            </div> -->
+      <div v-if="isEdit">
+        <label for="body" class="label">Body Cotent:</label>
+        <QuillEditor
+          theme="snow"
+          contentType="html"
+          v-model:content="currentData.body"
+          placeholder="Enter Anything..."
+        />
+      </div>
+      <div v-else v-html="currentContent.body"></div>
     </div>
-    <div class="d-flex justify-content-between mt-4 pt-4">
+    <div v-if="isEdit" class="mt-4 d-flex justify-content-end">
+      <button @click="updateForex" class="add-btn">Add</button>
+      <button @click="cancelForexAction" class="cancel-btn">Cancel</button>
+    </div>
+    <div class="d-flex justify-content-between mt-4 pt-4" v-else>
       <div @click="emits('updateTab', 'prev')">
         <arrow /><a class="ms-2 previous-lesson">Previous lessson</a>
       </div>
@@ -128,6 +175,22 @@ watch(()=>{})
   </b-modal>
 </template>
 <style>
+.add-btn {
+  border: none;
+  background-color: #c9f73a;
+  border-radius: 15px;
+  color: #000;
+  width: 25%;
+  font-size: 16px;
+}
+.cancel-btn {
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  color: #000;
+  width: 25%;
+  font-size: 16px;
+}
 .back-btn {
   margin: 0px 0px 20px 0px;
   color: #000;
@@ -158,8 +221,8 @@ watch(()=>{})
   font-family: Plus Jakarta Sans, system-ui, -apple-system, BlinkMacSystemFont,
     sans-serif;
 }
-.menu-icon .btn .btn-content{
-    width: 7px;
+.menu-icon .btn .btn-content {
+  width: 7px;
 }
 @media (min-width: 768px) {
   .back-btn {

@@ -2,11 +2,12 @@
 import { ref, onMounted, computed } from "vue";
 import { useEventStore } from "../../../../stores/index";
 import TabContent from "./partials/TabContent.vue";
-import { useRoute } from 'vue-router';
+import { useRoute } from "vue-router";
 
 const currentTab = ref(0);
 const showContent = ref(false);
 const isMobile = ref(false);
+const isEdit = ref(false);
 const eventStore = useEventStore();
 
 const tabs = computed(() => {
@@ -41,18 +42,32 @@ function showMobileContent(index) {
   currentTab.value = index;
 }
 
-const route=useRoute();
+const route = useRoute();
 
-const isAdmin=computed(()=>{
-    return route.fullPath.includes('forex');
-})
+const isAdmin = computed(() => {
+  return route.fullPath.includes("forex");
+});
+
+function addForex() {
+  eventStore.addNewForex();
+  currentTab.value =
+    tabs.value && tabs.value.length > 0 ? tabs.value.length - 1 : 0;
+  isEdit.value = true;
+}
 </script>
 <template>
   <div class="forex-basics text-start">
     <div class="theme-bg"></div>
     <div class="forex-material d-flex">
       <div class="forex-navs">
-        <b-button pill variant="outline-success">Add</b-button>
+        <div class="d-flex mt-2 mb-2">
+          <b-button
+            pill
+            variant="outline-success w-75 m-auto add-btn"
+            @click="addForex"
+            >Add</b-button
+          >
+        </div>
         <ul class="list-unstyled list-group">
           <li
             v-for="(tab, index) in tabs"
@@ -73,6 +88,7 @@ const isAdmin=computed(()=>{
         <TabContent
           :current-content.sync="currentContent"
           :current-tab.sync="currentTab"
+          :is-edit.sync="isEdit"
           @update-tab="updateTab"
         />
       </div>
@@ -81,6 +97,7 @@ const isAdmin=computed(()=>{
       <TabContent
         :current-content.sync="currentContent"
         :current-tab.sync="currentTab"
+        :is-edit.sync="isEdit"
         @update-tab="updateTab"
         @showMobileContent="showMobileContent"
       />
@@ -89,6 +106,11 @@ const isAdmin=computed(()=>{
 </template>
 
 <style>
+.add-btn:hover {
+  background-color: #c9f73a !important;
+  border: none;
+  color: #000;
+}
 .forex-basics {
   top: 140px;
   margin-bottom: 140px;
