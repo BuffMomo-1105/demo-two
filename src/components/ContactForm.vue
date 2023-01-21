@@ -79,8 +79,8 @@ const form = ref({
   padding: 16px 40px;
   font: 20px/30px "Inter", sans-serif;
   font-weight: 400;
-  background-color: #000;
-  color: #fff;
+  background-color: #c9f73a;
+  color: #000;
   border: 1px solid transparent;
 }
 .contact-form-button {
