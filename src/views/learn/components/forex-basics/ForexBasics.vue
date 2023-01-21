@@ -48,7 +48,7 @@ const isAdmin=computed(()=>{
 })
 </script>
 <template>
-  <div class="forex-basics text-start">
+  <!-- <div class="forex-basics text-start" >
     <div class="theme-bg"></div>
     <div class="forex-material d-flex">
       <div class="forex-navs">
@@ -85,7 +85,7 @@ const isAdmin=computed(()=>{
         @showMobileContent="showMobileContent"
       />
     </b-offcanvas>
-  </div>
+  </div> -->
 </template>
 
 <style>

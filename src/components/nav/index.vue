@@ -65,7 +65,7 @@ const menus = ref([
   display: inline;
   width: 140px;
   height: 28px;
-  margin-right: 71px !important;
+  margin-right: 40px !important;
 }
 .navbar-brand img {
   width: 140px;
