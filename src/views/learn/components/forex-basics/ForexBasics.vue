@@ -90,6 +90,7 @@ function addForex() {
           :current-tab.sync="currentTab"
           :is-edit.sync="isEdit"
           @update-tab="updateTab"
+          @on-tab-update="isEdit=false"
         />
       </div>
     </div>
@@ -100,6 +101,7 @@ function addForex() {
         :is-edit.sync="isEdit"
         @update-tab="updateTab"
         @showMobileContent="showMobileContent"
+        @on-tab-update="isEdit=false"
       />
     </b-offcanvas>
   </div>

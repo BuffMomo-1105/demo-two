@@ -12,8 +12,8 @@ const props = defineProps({
 const emits = defineEmits([
   "updateTab",
   "showMobileContent",
+  "onTabUpdate",
   "update:currentTab",
-  "update:isEdit",
 ]);
 const route = useRoute();
 const eventStore = useEventStore();
@@ -24,8 +24,8 @@ const isAdmin = computed(() => {
 const showWarning = ref(false);
 
 function deleteForex() {
-  eventStore.deleteForexBasic(props.currentTab);
   emits("update:currentTab", 0);
+  eventStore.deleteForexBasic(props.currentTab);
 }
 const currentData = ref({
   title: "",
@@ -34,8 +34,8 @@ const currentData = ref({
   mainHeading: "",
 });
 function updateForex() {
-  eventStore.updateForex(props.currentTab, currentData.value);
-  emits("update:isEdit", false);
+  // eventStore.updateForex(props.currentTab, currentData.value);
+  emits("onTabUpdate");
 }
 watch(
   () => props.isEdit,
@@ -72,7 +72,7 @@ watch(
         <b-dropdown-item href="#">Edit</b-dropdown-item>
       </b-dropdown>
     </div>
-    <div v-if="isEdit" class="mt-4">
+    <div v-if="isEdit" class="my-4">
       <label for="main-heading" class="label">Main Heading:</label>
       <QuillEditor
         theme="snow"
@@ -102,7 +102,7 @@ watch(
       </h3>
     </div>
     <div class="d-flex">
-      <p class="me-4 mt-4" v-if="isEdit">
+      <p class="me-4 mt-4 w-100" v-if="isEdit">
         <label for="title" class="label">Title:</label>
         <b-form-textarea
           id="textarea-small"
@@ -175,6 +175,14 @@ watch(
   </b-modal>
 </template>
 <style>
+.label {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.ql-container.ql-snow {
+  min-height: 100px;
+}
 .add-btn {
   border: none;
   background-color: #c9f73a;
