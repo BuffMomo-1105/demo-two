@@ -69,6 +69,7 @@ export const useEventStore = defineStore({
         },
       },
     ],
+    showOpenAccountDrawer:false,
   }),
   getters: {
     forexGetter() {

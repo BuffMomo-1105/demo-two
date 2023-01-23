@@ -35,7 +35,7 @@
             </template>
           </li>
         </ul>
-        <a class="nav-link open-account-btn me-4" href="#">Open Account</a>
+        <a class="nav-link open-account-btn me-4" @click="eventStore.showOpenAccountDrawer=true">Open Account</a>
         <a href="#" class="nav-link me-4">Login</a>
         <a class="nav-link demo-btn" href="#">Demo</a>
       </div>
@@ -43,7 +43,9 @@
   </nav>
 </template>
 <script setup>
+import { useEventStore } from "../../../stores";
 const props = defineProps(["menus"]);
+const eventStore=useEventStore()
 </script>
 
 <style>
