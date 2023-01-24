@@ -149,6 +149,7 @@ const showNav = () => {
   font-size: 14px !important;
   background-color: #c9f73a;
   padding: 6px !important;
+  cursor: pointer;
   /* padding-bottom: 0px !important; */
 }
 </style>

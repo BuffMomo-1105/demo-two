@@ -87,7 +87,7 @@
   <!-- Section four ends -->
 
   <!-- Section five starts -->
-  <div class="section-five text-start pb-4" >
+  <div class="section-five text-start pb-4">
     <div style="max-width: 1500px">
       <h1 class="section-five-heading">
         What is your choice of trading account?
@@ -100,9 +100,9 @@
             class="section-three-img"
           /><span class="inner-text">0.6P</span>
           <h2 class="section-five-text">Low Spread</h2>
-          <a href="/" class="text-decoration-none">
-            <h5 class="learn-more mt-4">Learn More</h5></a
-          >
+          <router-link class="text-decoration-none" to="/trading-account">
+            <h5 class="learn-more mt-4">Learn More</h5>
+          </router-link>
         </div>
 
         <div data-aos="fade-up" data-aos-delay="200" class="col card-second">
@@ -113,9 +113,9 @@
           />
           <span class="inner-text">6$ per lakh</span>
           <h2 class="section-five-text ms-4">Zero Spread</h2>
-          <a href="/" class="text-decoration-none"
-            ><h5 class="learn-more mt-4 ms-4">Learn More</h5></a
-          >
+          <router-link class="text-decoration-none" to="/trading-account">
+            <h5 class="learn-more mt-4">Learn More</h5>
+          </router-link>
         </div>
       </div>
     </div>

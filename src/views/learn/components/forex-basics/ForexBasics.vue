@@ -82,7 +82,7 @@ function addForex() {
             :class="{ 'active-tab': currentTab == index }"
             @click="showMobileContent(index)"
           >
-            <span class="theme-text">
+            <span class="lesson-nav">
               <i class="fas fa-play-circle"></i>
               <strong>Lesson {{ index + 1 }}.</strong>
             </span>
@@ -110,10 +110,15 @@ function addForex() {
         @on-tab-update="isEdit = false"
       />
     </b-offcanvas>
-  </div> -->
+  </div>
 </template>
 
 <style>
+.lesson-nav {
+  background-color: #000;
+  color: #fff;
+  background: transparent;
+}
 .theme-bg h1 {
   width: 80%;
   top: 25px;
@@ -139,6 +144,7 @@ function addForex() {
   background-color: #c9f73a;
 }
 .forex-material {
+  max-width: 1500px;
   width: 100%;
   margin: auto;
   top: -50px;
@@ -147,6 +153,7 @@ function addForex() {
 }
 .forex-navs {
   width: 100%;
+  background-color: #000;
 }
 .forex-contents {
   display: none;
@@ -158,10 +165,11 @@ function addForex() {
   line-height: 20px;
   transition: all 0.3s;
   position: relative;
-  color: black;
+  color: #c9f73a;
   font-family: Plus Jakarta Sans, system-ui, -apple-system, BlinkMacSystemFont,
     sans-serif;
   padding-top: 3rem !important;
+  background-color: #000;
 }
 @media (min-width: 769px) {
   .forex-material {
@@ -176,9 +184,9 @@ function addForex() {
     width: 40%;
   }
   .material-nav {
-    max-width: 420px !important;
+    /* max-width: 420px !important; */
     font-size: 20px;
-    background-color: #f6f7f8;
+    background-color: #000;
     border: none;
   }
   .desktop-hide,
@@ -204,7 +212,7 @@ function addForex() {
   color: #c9f73a;
 }
 .active-tab {
-  background-color: #fff !important;
+  background-color: rgb(34 34 34) !important;
 }
 
 .tab-content {
@@ -213,6 +221,9 @@ function addForex() {
   top: 0;
   background: white;
   padding: 60px 10%;
+  padding-left: 50px;
+  padding-top: 30px;
+  font-size: 24px;
 }
 .vedio-lesson {
   max-width: 98%;

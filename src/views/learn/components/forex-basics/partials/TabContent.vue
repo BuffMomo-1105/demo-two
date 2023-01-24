@@ -74,7 +74,7 @@ watch(
         >
       </b-dropdown>
     </div>
-    <div v-if="isEdit" class="my-4">
+    <!-- <div v-if="isEdit" class="my-4">
       <label for="main-heading" class="label">Main Heading:</label>
       <QuillEditor
         theme="snow"
@@ -84,10 +84,8 @@ watch(
       />
     </div>
     <div v-else>
-      <div v-html="currentContent.mainHeading"></div>
-      <!-- <div>
-        <h2><strong>Forex basics: video course</strong></h2>
-      </div>
+      <div v-html="currentContent.mainHeading"></div> -->
+    <div>
       <div>
         <p>
           This video course for beginners will guide you through the main
@@ -96,7 +94,7 @@ watch(
           learn how to take your first steps in trading, and start developing
           your trading strategy.
         </p>
-      </div> -->
+      </div>
     </div>
     <div>
       <h3>
@@ -113,7 +111,9 @@ watch(
           placeholder="Enter Title"
         ></b-form-textarea>
       </p>
-      <p class="me-4" v-else>{{ currentContent.title }}</p>
+      <p class="me-4 title-content" v-else>
+        {{ currentContent.title }}
+      </p>
     </div>
     <div v-if="isEdit">
       <label for="url" class="label">Vedio URL:</label>
@@ -136,7 +136,7 @@ watch(
         allowfullscreen
       ></iframe>
     </div>
-    <div>
+    <div style="margin-top: 30px">
       <div v-if="isEdit">
         <label for="body" class="label">Body Content:</label>
         <QuillEditor
@@ -179,6 +179,11 @@ watch(
   </b-modal>
 </template>
 <style>
+.title-content {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+}
 .label {
   font-size: 24px;
   font-weight: 600;

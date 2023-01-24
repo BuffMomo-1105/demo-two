@@ -12,11 +12,38 @@ const form = ref({
 </script>
 <template>
   <div>
-    <b-offcanvas
-      v-model="eventStore.showOpenAccountDrawer"
-      placement="end"
-      title="Open Account Now"
-    >
+    <b-offcanvas v-model="eventStore.showOpenAccountDrawer" placement="end">
+      <template #title>
+        <div class="d-flex justify-content-center open-account-header">
+          <h3>Open Account Now</h3>
+          <span
+            class="close-icon"
+            @click="eventStore.showOpenAccountDrawer = false"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M6 6L18 18M18 6L6 18"
+                  stroke="#c9f73a"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </span>
+        </div>
+      </template>
       <form action="">
         <b-form-group>
           <b-form-input
@@ -51,6 +78,20 @@ const form = ref({
   </div>
 </template>
 <style>
+.open-account-header {
+  font: 24px/32px "Nekst", sans-serif;
+  font-weight: 700;
+  color: #c9f73a;
+}
+.close-icon {
+  color: #c9f73a;
+  width: 40px !important;
+  position: absolute;
+  top: -10px;
+  right: -30px;
+  z-index: 9999;
+  cursor: pointer;
+}
 .acct-btn {
   background-color: #c9f73a !important;
   color: #000 !important;
@@ -58,20 +99,35 @@ const form = ref({
   height: 55px;
   width: 100%;
   margin-top: 2em;
+  font-size: 24px;
+  font-weight: 600px;
 }
 .offcanvas.offcanvas-end {
   z-index: 9999;
+  background: black;
+  color: white;
 }
 .offcanvas-title {
   margin-bottom: 0;
   line-height: 1.5;
-  margin-left: 22%;
+  margin-left: 20px;
   font-size: 24px;
+  width: 100%;
 }
 .form-control {
   height: 55px;
+  background: transparent !important;
+  color: #c9f73a !important;
+}
+.form-control:focus {
+  border: 2px solid #c9f73a !important;
 }
 .offcanvas-body {
   margin-top: 2em;
+}
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white !important;
+  opacity: 1; /* Firefox */
 }
 </style>
