@@ -15,7 +15,7 @@
           class="d-flex position-absolute end-0 me-4 mbl-nav-second"
           style="top: 26px"
         >
-          <a class="nav-link open-account-btn" href="#">Open Account</a>
+          <a class="nav-link open-account-btn" @click="eventStore.showOpenAccountDrawer=true" >Open Account</a>
           <div class="mbl-demo-btn ms-2">
             <a class="nav-link demo-btn" href="#">Demo</a>
           </div>
@@ -98,8 +98,10 @@
 </template>
 <script setup>
 import { ref } from "vue";
+import { useEventStore } from "../../../stores";
 const props = defineProps(["menus"]);
 const openNav = ref(false);
+const eventStore=useEventStore()
 const showNav = () => {
   openNav.value = !openNav.value;
 };

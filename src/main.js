@@ -1,4 +1,4 @@
-import { createApp ,markRaw} from "vue";
+import { createApp, markRaw } from "vue";
 import { createPinia } from "pinia";
 
 import App from "./App.vue";
@@ -13,28 +13,29 @@ import "./assets/styles/main.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { QuillEditor } from '@vueup/vue-quill'
-import '@vueup/vue-quill/dist/vue-quill.snow.css';
+import { QuillEditor } from "@vueup/vue-quill";
+import "@vueup/vue-quill/dist/vue-quill.snow.css";
 
 // components
 import CustomBackground from "./components/icons/CustomBackground.vue";
 import ArrowBlack from "./components/icons/ArrowBlack.vue";
 import ArrowTheme from "./components/icons/ArrowTheme.vue";
-import Dash from "./components/icons/Dash.vue"
+import Dash from "./components/icons/Dash.vue";
+import ContactForm from "./components/ContactForm.vue";
 
 const app = createApp(App);
 app.component("custom-back", CustomBackground);
 app.component("arrow-black", ArrowBlack);
 app.component("arrow-theme", ArrowTheme);
 app.component("dash", Dash);
+app.component("contact-form", ContactForm);
 
-app.component('QuillEditor', QuillEditor)
+app.component("QuillEditor", QuillEditor);
 
-
-const pinia = createPinia()
+const pinia = createPinia();
 pinia.use(({ store }) => {
-  store.$router = markRaw(router)
-})
+  store.$router = markRaw(router);
+});
 
 app.use(pinia);
 app.use(router);

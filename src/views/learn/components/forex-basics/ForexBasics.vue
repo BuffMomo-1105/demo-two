@@ -110,7 +110,7 @@ function addForex() {
         @on-tab-update="isEdit = false"
       />
     </b-offcanvas>
-  </div>
+  </div> -->
 </template>
 
 <style>

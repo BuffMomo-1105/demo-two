@@ -12,7 +12,7 @@
             <li><a href="#">About Company</a></li>
             <li><a href="#">FAQ</a></li>
             <li><router-link to="/policy"> KYC / AML Policy </router-link></li>
-            <li><a href="#">Contact</a></li>
+            <li><router-link to="/get-in-touch"> Contact </router-link></li>
           </ul>
 
           <div class="social mb-4">
@@ -34,7 +34,7 @@
           </div>
 
           <div class="copyright">
-            <p class="mb-0">
+            <p class="mb-0 text-center">
               <small>&copy;b2pip.com. All Rights Reserved.</small>
             </p>
           </div>

@@ -17,7 +17,7 @@
       </div>
       <div class="policy-desc">
         <p>
-          Capital Creek Broking Service LLP is committed to the highest
+          Capital Creek Broking Service LLC is committed to the highest
           standards of compliance against money laundering (AML) and
           anti-terrorist financing (CTF). The objective of the Companies Policy
           against Money Laundering and Terrorism Financing is to actively
@@ -63,7 +63,7 @@
         <p>
           TThe funds are re-circulated as legitimate to purchase goods and
           services.
-          <strong>" Capital Creek Broking Service LLP "</strong> adheres to the
+          <strong>" Capital Creek Broking Service LLC "</strong> adheres to the
           principles of Anti-Money Laundering and actively prevents any action
           that targets or facilitates the legalization process of illegally
           obtained funds. The AML policy means preventing the use of the
@@ -72,7 +72,7 @@
         </p>
         <p>
           To prevent money laundering,
-          <strong>" Capital Creek Broking Service LLP "</strong> does not accept
+          <strong>" Capital Creek Broking Service LLC "</strong> does not accept
           or pay in cash under any circumstances. The company reserves the right
           to suspend the operation of any client, which may be considered
           illegal or, in the opinion of the staff, related to money laundering.
@@ -84,12 +84,12 @@
       </div>
       <div class="policy-desc">
         <p>
-          <strong>" Capital Creek Broking Service LLP "</strong> will ensure
-          that it is a real or legal person. " Capital Creek Broking Service LLP
+          <strong>" Capital Creek Broking Service LLC "</strong> will ensure
+          that it is a real or legal person. " Capital Creek Broking Service LLC
           " also performs all the necessary measures in accordance with the
           applicable laws and regulations, issued by the monetary authorities.
           The AML policy is being met within FX of “Capital Creek Broking
-          Service LLP” by the following means:
+          Service LLC” by the following means:
         </p>
       </div>
       <div class="lists">
@@ -108,7 +108,7 @@
         <p>
           Due to the company's commitment to AML and KYC policies, each company
           customer must complete a verification procedure. Before
-          <strong>“Capital Creek Broking Service LLP”</strong> initiates any
+          <strong>“Capital Creek Broking Service LLC”</strong> initiates any
           cooperation with the client, the company ensures that satisfactory
           evidence is presented or other measures are taken that produce
           satisfactory proof of the identity of any client or counterparty. The
@@ -171,7 +171,7 @@
           the control of said company, no further steps will normally be taken
           to verify the identity. necessary. In the event that the company is
           not listed and none of the main directors or shareholders already has
-          an account with <strong>“Capital Creek Broking Service LLP”</strong>,
+          an account with <strong>“Capital Creek Broking Service LLC”</strong>,
           the following documentation must be provided:
         </p>
       </div>
@@ -198,7 +198,7 @@
         </p>
         <p class="m-0">
           <dash class="dash-policy" />Proof of the identity of the directors in
-          case they deal with “Capital Creek Broking Service LLP” on behalf of
+          case they deal with “Capital Creek Broking Service LLC” on behalf of
           the Client (in accordance with the individual identity verification
           rules described above);
         </p>
@@ -218,12 +218,12 @@
       <div class="policy-desc">
         <p>
           In addition to collecting customer information,
-          <strong>“Capital Creek Broking Service LLP”</strong> continues to
+          <strong>“Capital Creek Broking Service LLC”</strong> continues to
           monitor the activity of each customer to identify and prevent any
           suspicious transactions. A suspicious transaction is known as a
           transaction that is not consistent with the legitimate business of the
           customer or with the transaction history of the regular customer known
-          by tracking customer activity. “Capital Creek Broking Service LLP” has
+          by tracking customer activity. “Capital Creek Broking Service LLC” has
           implemented the named transactions monitoring system (both automatic
           and, if necessary, manual) to prevent criminals from using the
           company's services.
@@ -253,15 +253,15 @@
       <div class="policy-desc">
         <p>
           In cases of an attempt to execute transactions that " Capital Creek
-          Broking Service LLP " suspects are related to money laundering or
+          Broking Service LLC " suspects are related to money laundering or
           other criminal activity, it will proceed in accordance with applicable
           law and report the suspicious activity to the regulatory authority.
         </p>
         <p>
-          <strong>" Capital Creek Broking Service LLP "</strong> reserves the
+          <strong>" Capital Creek Broking Service LLC "</strong> reserves the
           right to suspend the operation of any client, which may be considered
           illegal or may be related to money laundering in the opinion of the
-          staff. “Capital Creek Broking Service LLP” has full discretion to
+          staff. “Capital Creek Broking Service LLC” has full discretion to
           temporarily block the suspicious customer's account or terminate a
           relationship with an existing customer. For more information you can
           contact us at support @b2pip.com
