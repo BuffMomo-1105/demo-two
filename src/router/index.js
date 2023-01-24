@@ -1,5 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
 
+const adminRoutes = [
+  {
+    path: "/forex-basics/admin",
+    name: "Forex Basics Admin",
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/learn/components/forex-basics/ForexBasics.vue"
+      ),
+  },
+];
+
 const routes = [
   {
     path: "/",
@@ -83,12 +94,13 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/policy/PolicyPage.vue"),
   },
+  ...adminRoutes
 ];
 
 const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     // always scroll to top
-    return { top: 0 }
+    return { top: 0 };
   },
   history: createWebHistory(),
   routes,
