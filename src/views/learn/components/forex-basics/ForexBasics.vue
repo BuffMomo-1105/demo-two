@@ -17,10 +17,12 @@ const currentContent = computed(() => {
   return tabs.value[currentTab.value];
 });
 function updateTab(data) {
-  if (data == "next") {
+  if (data == "next" && currentTab.value < tabs.value.length - 1) {
     currentTab.value++;
   } else if (data == "prev" && currentTab.value > 0) {
     currentTab.value--;
+  } else {
+    return;
   }
 }
 const checkDeviceWidth = () => {
@@ -38,6 +40,7 @@ onMounted(() => {
 });
 const showD = ref(false);
 function showMobileContent(index) {
+  isEdit.value = false;
   showD.value = !showD.value;
   currentTab.value = index;
 }
@@ -45,7 +48,7 @@ function showMobileContent(index) {
 const route = useRoute();
 
 const isAdmin = computed(() => {
-  return route.fullPath.includes("forex");
+  return route.fullPath.includes("admin");
 });
 
 function addForex() {
@@ -53,14 +56,17 @@ function addForex() {
   currentTab.value =
     tabs.value && tabs.value.length > 0 ? tabs.value.length - 1 : 0;
   isEdit.value = true;
+  showD.value = true;
 }
 </script>
 <template>
   <div class="forex-basics text-start">
-    <div class="theme-bg"></div>
+    <div class="theme-bg">
+      <h1>Forex Basic: Tutorials</h1>
+    </div>
     <div class="forex-material d-flex">
       <div class="forex-navs">
-        <div class="d-flex mt-2 mb-2">
+        <div class="d-flex mt-2 mb-2" v-if="isAdmin">
           <b-button
             pill
             variant="outline-success w-75 m-auto add-btn"
@@ -86,28 +92,39 @@ function addForex() {
       </div>
       <div class="forex-contents">
         <TabContent
-          :current-content.sync="currentContent"
-          :current-tab.sync="currentTab"
-          :is-edit.sync="isEdit"
+          v-model:current-content="currentContent"
+          v-model:current-tab="currentTab"
+          v-model:is-edit="isEdit"
           @update-tab="updateTab"
-          @on-tab-update="isEdit=false"
+          @on-tab-update="isEdit = false"
         />
       </div>
     </div>
     <b-offcanvas v-model="showD" no-header-close no-header class="desktop-hide">
       <TabContent
-        :current-content.sync="currentContent"
-        :current-tab.sync="currentTab"
-        :is-edit.sync="isEdit"
+        v-model:current-content="currentContent"
+        v-model:current-tab="currentTab"
+        v-model:is-edit="isEdit"
         @update-tab="updateTab"
         @showMobileContent="showMobileContent"
-        @on-tab-update="isEdit=false"
+        @on-tab-update="isEdit = false"
       />
     </b-offcanvas>
   </div>
 </template>
 
 <style>
+.theme-bg h1 {
+  width: 80%;
+  top: 25px;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0 auto 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: "Nekst", sans-serif;
+  font-size: 32px;
+}
 .add-btn:hover {
   background-color: #c9f73a !important;
   border: none;
@@ -126,6 +143,7 @@ function addForex() {
   margin: auto;
   top: -50px;
   background-color: #fff;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
 }
 .forex-navs {
   width: 100%;

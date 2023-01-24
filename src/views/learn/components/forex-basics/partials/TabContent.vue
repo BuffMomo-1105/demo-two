@@ -12,14 +12,14 @@ const props = defineProps({
 const emits = defineEmits([
   "updateTab",
   "showMobileContent",
-  "onTabUpdate",
+  "update:isEdit",
   "update:currentTab",
 ]);
 const route = useRoute();
 const eventStore = useEventStore();
 
 const isAdmin = computed(() => {
-  return route.fullPath.includes("forex");
+  return route.fullPath.includes("admin");
 });
 const showWarning = ref(false);
 
@@ -34,8 +34,8 @@ const currentData = ref({
   mainHeading: "",
 });
 function updateForex() {
-  // eventStore.updateForex(props.currentTab, currentData.value);
-  emits("onTabUpdate");
+  eventStore.updateForex(props.currentTab, currentData.value);
+  emits("update:isEdit", false);
 }
 watch(
   () => props.isEdit,
@@ -51,7 +51,7 @@ watch(
     <div @click="emits('showMobileContent', 0)" class="back-btn">
       <arrow /><a class="ms-2 previous-lesson">Back</a>
     </div>
-    <div class="position-absolute menu-icon">
+    <div class="position-absolute menu-icon" v-if="isAdmin">
       <!-- <i class="fas fa-trash-alt fa-2x"></i> -->
       <b-dropdown
         size="lg"
@@ -69,7 +69,9 @@ watch(
         <b-dropdown-item href="#" @click="showWarning = true"
           >Delete</b-dropdown-item
         >
-        <b-dropdown-item href="#">Edit</b-dropdown-item>
+        <b-dropdown-item href="#" @click="emits('update:isEdit', true)"
+          >Edit</b-dropdown-item
+        >
       </b-dropdown>
     </div>
     <div v-if="isEdit" class="my-4">
@@ -136,7 +138,7 @@ watch(
     </div>
     <div>
       <div v-if="isEdit">
-        <label for="body" class="label">Body Cotent:</label>
+        <label for="body" class="label">Body Content:</label>
         <QuillEditor
           theme="snow"
           contentType="html"
@@ -148,7 +150,9 @@ watch(
     </div>
     <div v-if="isEdit" class="mt-4 d-flex justify-content-end">
       <button @click="updateForex" class="add-btn">Add</button>
-      <button @click="cancelForexAction" class="cancel-btn">Cancel</button>
+      <button @click="emits('update:isEdit', false)" class="cancel-btn">
+        Cancel
+      </button>
     </div>
     <div class="d-flex justify-content-between mt-4 pt-4" v-else>
       <div @click="emits('updateTab', 'prev')">
@@ -221,6 +225,7 @@ watch(
 }
 
 .delete-modal {
+  z-index: 99999 !important;
   text-align: center !important;
   font-size: 18px;
   font-weight: 400;
@@ -232,7 +237,7 @@ watch(
 .menu-icon .btn .btn-content {
   width: 7px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .back-btn {
     display: none;
   }
