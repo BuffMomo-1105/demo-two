@@ -61,7 +61,7 @@ function addForex() {
 </script>
 <template>
   <div class="forex-basics text-start">
-    <div class="theme-bg">
+    <div class="theme-bg" id="forex">
       <h1>Forex Basic: Tutorials</h1>
     </div>
     <div class="forex-material d-flex">
@@ -100,7 +100,7 @@ function addForex() {
         />
       </div>
     </div>
-    <b-offcanvas v-model="showD" no-header-close no-header class="desktop-hide">
+    <b-offcanvas v-model="showD" no-header-close no-header class="desktop-hide" no-fade="false">
       <TabContent
         v-model:current-content="currentContent"
         v-model:current-tab="currentTab"
@@ -121,6 +121,7 @@ function addForex() {
 }
 .theme-bg h1 {
   width: 80%;
+  max-width: 1500px;
   top: 25px;
   text-transform: uppercase;
   color: #000;
@@ -136,8 +137,8 @@ function addForex() {
   color: #000;
 }
 .forex-basics {
-  top: 140px;
-  margin-bottom: 140px;
+  top: 100px;
+  /* margin-bottom: 140px; */
 }
 .theme-bg {
   height: 150px;
@@ -150,6 +151,7 @@ function addForex() {
   top: -50px;
   background-color: #fff;
   box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+  margin-top: 10px
 }
 .forex-navs {
   width: 100%;
@@ -172,6 +174,9 @@ function addForex() {
   background-color: #000;
 }
 @media (min-width: 769px) {
+  .tab-content {
+    font-size: 24px;
+  }
   .forex-material {
     width: 80%;
     top: -67px;
@@ -223,19 +228,35 @@ function addForex() {
   padding: 60px 10%;
   padding-left: 50px;
   padding-top: 30px;
-  font-size: 24px;
+  font-size: 16px;
+  padding-right: 2%;
+  font-family: Plus Jakarta Sans, system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
 }
 .vedio-lesson {
   max-width: 98%;
+  min-width: 98%;
+  width: 98%;
+  height: 450px;
 }
 </style>
 
 <style scoped>
-.offcanvas {
-  z-index: 9999;
+.desktop-hide {
+  z-index: 999;
   top: 100px;
+  position: absolute;
+  padding-top: 15px;
+}
+:deep(.offcanvas-body) {
+  margin: 0;
+  padding: 0;
 }
 .offcanvas.offcanvas-start {
   width: 100% !important;
+}
+:deep(.offcanvas-backdrop.show){
+  opacity: 0 !important;
+  display: none;
 }
 </style>

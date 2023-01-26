@@ -86,7 +86,7 @@ watch(
     <div v-else>
       <div v-html="currentContent.mainHeading"></div> -->
     <div>
-      <div>
+      <div class="forex-sub">
         <p>
           This video course for beginners will guide you through the main
           aspects of Forex trading. You will learn how the Forex market works
@@ -96,10 +96,13 @@ watch(
         </p>
       </div>
     </div>
-    <div>
+    <div class="lesson-title">
       <h3>
         <strong>Lesson {{ currentTab + 1 }} </strong>
       </h3>
+      <p class="me-4 title-content" v-if="!isEdit">
+        {{ currentContent.title }}
+      </p>
     </div>
     <div class="d-flex">
       <p class="me-4 mt-4 w-100" v-if="isEdit">
@@ -110,9 +113,6 @@ watch(
           v-model="currentData.title"
           placeholder="Enter Title"
         ></b-form-textarea>
-      </p>
-      <p class="me-4 title-content" v-else>
-        {{ currentContent.title }}
       </p>
     </div>
     <div v-if="isEdit">
@@ -179,6 +179,20 @@ watch(
   </b-modal>
 </template>
 <style>
+.forex-sub {
+  border: 5px solid #c3ff54;
+  color: #c9f37a;
+  background: black;
+  padding: 0.5em;
+  font-family: Plus Jakarta Sans, system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+}
+.lesson-title {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-left: 20px solid #c9f35a;
+  padding-left: 10px;
+}
 .title-content {
   font-size: 22px;
   font-weight: bold;
@@ -246,5 +260,11 @@ watch(
   .back-btn {
     display: none;
   }
+}
+.offcanvas .tab-content {
+  padding: 0 ;
+  margin: 0 ;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 </style>

@@ -7,7 +7,7 @@ import { FreeMode, Pagination, Autoplay } from "swiper";
 import { ref } from "vue";
 import { useEventStore } from "../../stores";
 
-const eventStore=useEventStore();
+const eventStore = useEventStore();
 const lists = ref([
   {
     title: "SPREAD",
@@ -47,21 +47,39 @@ const lists = ref([
 <template>
   <div class="trading-account-page">
     <div class="theme-bg">
-      <h1>Account Type Comparisions</h1>
+      <h1>Account &nbsp;Type &nbsp;Comparisions</h1>
     </div>
     <div class="account-section">
       <div class="account-cards">
         <div class="pip-value d-grid">
           <span class="inner-text w-100">Pip-Value Account </span>
-          <b-button class="open-btn mt-4" @click="eventStore.showOpenAccountDrawer=true">Open Account</b-button>
+          <b-button
+            class="open-btn mt-4"
+            @click="eventStore.showOpenAccountDrawer = true"
+            >Open Account</b-button
+          >
         </div>
         <div class="pip-com d-grid">
           <span class="inner-text w-100"> Pip-Com Account</span>
-          <b-button class="open-btn mt-4" @click="eventStore.showOpenAccountDrawer=true">Open Account</b-button>
+          <b-button
+            class="open-btn mt-4"
+            @click="eventStore.showOpenAccountDrawer = true"
+            >Open Account</b-button
+          >
         </div>
       </div>
       <div class="desktop-hide">
-        <swiper
+        <!-- <b-button
+          class="open-btn mt-4"
+          @click="eventStore.showOpenAccountDrawer = true"
+          >Open Account</b-button
+        > -->
+        <b-button class="acct-btn mb-2 mt-2 w-75" @click="eventStore.showOpenAccountDrawer = true">Open Account</b-button>
+        <div class="pip-value d-grid">
+          <span class="inner-text pip-inner">Pip-Value Account </span>
+          <span class="inner-text comm-inner">Pip-Comm Account </span>
+        </div>
+        <!-- <swiper
           :slidesPerView="1"
           :spaceBetween="30"
           :loop="true"
@@ -89,16 +107,24 @@ const lists = ref([
           <swiper-slide>
             <div class="pip-value d-grid">
               <span class="inner-text w-100">Pip-Value Account </span>
-              <b-button class="open-btn mt-4" @click="eventStore.showOpenAccountDrawer=true">Open Account</b-button>
+              <b-button
+                class="open-btn mt-4"
+                @click="eventStore.showOpenAccountDrawer = true"
+                >Open Account</b-button
+              >
             </div>
           </swiper-slide>
           <swiper-slide>
             <div class="pip-com d-grid">
               <span class="inner-text w-100"> Pip-Com Account</span>
-              <b-button class="open-btn mt-4" @click="eventStore.showOpenAccountDrawer=true">Open Account</b-button>
+              <b-button
+                class="open-btn mt-4"
+                @click="eventStore.showOpenAccountDrawer = true"
+                >Open Account</b-button
+              >
             </div>
           </swiper-slide>
-        </swiper>
+        </swiper> -->
       </div>
       <div class="account-desc" v-for="item in lists" :key="item.title">
         <div class="desc-title w-100">{{ item.title }}</div>
@@ -111,10 +137,18 @@ const lists = ref([
         <div class="desc-title w-100"></div>
         <div class="w-100 d-flex">
           <div class="desc-value w-50">
-            <b-button class="open-btn mt-4" @click="eventStore.showOpenAccountDrawer=true">Open Account</b-button>
+            <b-button
+              class="open-btn mt-4"
+              @click="eventStore.showOpenAccountDrawer = true"
+              >Open Account</b-button
+            >
           </div>
           <div class="desc-comm w-50">
-            <b-button class="open-btn mt-4" @click="eventStore.showOpenAccountDrawer=true">Open Account</b-button>
+            <b-button
+              class="open-btn mt-4"
+              @click="eventStore.showOpenAccountDrawer = true"
+              >Open Account</b-button
+            >
           </div>
         </div>
       </div>
@@ -208,7 +242,22 @@ const lists = ref([
 .desktop-hide {
   display: none;
 }
+.pip-inner {
+  position: absolute;
+  left: 2%;
+  top: 10%;
+  max-width: 50%;
+}
+.comm-inner{
+  position: absolute;
+  right: 2%;
+  bottom: 10%;
+  max-width: 50%;
+}
 @media (max-width: 768px) {
+  .inner-text {
+    font-size: 24px;
+  }
   .desktop-hide {
     display: block;
   }
@@ -216,6 +265,9 @@ const lists = ref([
     background-color: #000;
     width: 100%;
     padding: 4em;
+    background: linear-gradient(-26deg, rgb(43 42 42) 50%, black 50%);
+    width: 100vw;
+    height: 50vw;
   }
   .pip-com {
     background-color: rgb(43 42 42);

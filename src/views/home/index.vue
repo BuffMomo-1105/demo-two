@@ -1,4 +1,22 @@
 <template>
+  <b-offcanvas v-model="showAds" placement="top" class="ad-section" no-header>
+    <div class="d-flex h-100 w-100">
+      <div class="w-50 h-100">
+        <img
+          class="w-100 h-100"
+          src="https://d1xv5jidmf7h0f.cloudfront.net/circleone/images/products_gallery_images/PVC-Banners.jpg"
+          alt=""
+        />
+      </div>
+      <div class="w-50 h-100">
+        <img
+          class="w-100 h-100"
+          src="https://i0.wp.com/businessnow.ca/wp-content/uploads/2020/08/VinylBanner.jpg?fit=1000%2C629&ssl=1"
+          alt=""
+        />
+      </div>
+    </div>
+  </b-offcanvas>
   <!-- Section one starts -->
   <Projection>
     <template #slogan-left>
@@ -140,14 +158,25 @@
 </template>
 <script setup>
 import Projection from "./components/Projection.vue";
-import { onMounted } from "vue";
+import { onMounted, ref } from "vue";
 import AOS from "aos";
 
+const showAds = ref(false);
 onMounted(() => {
   AOS.init();
+  showAds.value = true;
 });
 </script>
 
 <style>
 @import "../../assets/styles/home.css";
+.ad-section {
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+}
+.ad-section .offcanvas-body {
+  margin: 0;
+  padding: 0;
+}
 </style>
