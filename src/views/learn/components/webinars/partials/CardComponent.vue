@@ -19,17 +19,30 @@
         </div>
       </div>
     </div>
-    <div class="d-flex">
-      <b-button pill class="webinar-more-btn mt-4">Learn More</b-button>
+    <div class="d-flex webinar-card-action">
+      <router-link :to="webinar.url" style="color: black">
+        <b-button
+          pill
+          class="webinar-more-btn mt-4"
+          @click="eventStore.currentWebinar = webinar"
+        >
+          Learn More
+        </b-button>
+      </router-link>
     </div>
   </div>
 </template>
 <script setup>
+import { useEventStore } from "../../../../../stores";
 const props = defineProps({
   webinar: { type: Object, required: false },
 });
+const eventStore = useEventStore();
 </script>
 <style>
+.webinar-card-action a{
+  width: 100%;
+}
 .webinar-card {
   background-color: black;
   color: #c9f73a;

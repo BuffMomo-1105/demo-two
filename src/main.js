@@ -1,5 +1,6 @@
 import { createApp, markRaw } from "vue";
 import { createPinia } from "pinia";
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
 import App from "./App.vue";
 import router from "./router";
@@ -33,6 +34,7 @@ app.component("contact-form", ContactForm);
 app.component("QuillEditor", QuillEditor);
 
 const pinia = createPinia();
+pinia.use(piniaPluginPersistedstate)
 pinia.use(({ store }) => {
   store.$router = markRaw(router);
 });

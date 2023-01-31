@@ -59,7 +59,8 @@ export const useEventStore = defineStore({
         body: 'In this lesson, you will learn to: <ul class="list-group "><li class="list-group-item">An item</li><li class="list-group-item">A second item</li><li class="list-group-item">A third item</li><li class="list-group-item">A fourth item</li><li class="list-group-item">And a fifth one</li></ul>',
       },
     ],
-    showOpenAccountDrawer:false,
+    showOpenAccountDrawer: false,
+    currentWebinar: null,
   }),
   getters: {
     forexGetter() {
@@ -103,4 +104,5 @@ export const useEventStore = defineStore({
       this.forexData[index] = payload;
     },
   },
+  persist: true,
 });

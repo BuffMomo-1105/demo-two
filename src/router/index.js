@@ -97,6 +97,14 @@ const routes = [
       ),
   },
   {
+    path: "/webinars/:webinar",
+    name: "Webinar Detail",
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/learn/components/webinars/partials/WebinarDetail.vue"
+      ),
+  },
+  {
     path: "/policy",
     name: "Policy",
     component: () =>
