@@ -10,7 +10,7 @@
         />
       </div>
       <div class="past-webinars">
-        <h3>Upcoming Webinars</h3>
+        <h3>Past Webinars</h3>
         <PastWebinars />
       </div>
     </div>
