@@ -89,12 +89,20 @@ const routes = [
       ),
   },
   {
+    path: "/webinars",
+    name: "Webinars",
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/learn/components/webinars/Webinars.vue"
+      ),
+  },
+  {
     path: "/policy",
     name: "Policy",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/policy/PolicyPage.vue"),
   },
-  ...adminRoutes
+  ...adminRoutes,
 ];
 
 const router = createRouter({
