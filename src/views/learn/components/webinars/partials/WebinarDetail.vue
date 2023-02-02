@@ -70,14 +70,6 @@ import { useEventStore } from "../../../../../stores";
 const eventStore = useEventStore();
 </script>
 <style>
-.webinar-banner-ad {
-  margin: 1em;
-  border-radius: 20px;
-  margin-bottom: 8em;
-}
-.webinar-banner-ad img {
-  border-radius: 20px;
-}
 .webinar-margin {
   margin: 1em;
 }
