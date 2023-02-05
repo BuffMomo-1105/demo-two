@@ -60,6 +60,7 @@ export const useEventStore = defineStore({
       },
     ],
     showOpenAccountDrawer: false,
+    openLoginModal:false,
     currentWebinar: null,
   }),
   getters: {

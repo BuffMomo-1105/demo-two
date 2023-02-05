@@ -29,7 +29,13 @@
           <div v-html="eventStore.currentWebinar.desc"></div>
           <div class="d-block mt-4">
             <b-button pill class="webinar-sub-btn mt-4"> Subscribe </b-button>
-            <b-button pill class="webinar-sub-btn mt-4"> Login </b-button>
+            <b-button
+              pill
+              class="webinar-sub-btn mt-4"
+              @click="eventStore.openLoginModal = true"
+            >
+              Login
+            </b-button>
           </div>
         </div>
       </div>
@@ -62,10 +68,12 @@
         />
       </div>
     </div>
+    <LoginModal />
   </section>
 </template>
 <script setup>
 import { useEventStore } from "../../../../../stores";
+import LoginModal from "../../../../../components/LoginModal.vue";
 
 const eventStore = useEventStore();
 </script>

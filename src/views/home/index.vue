@@ -1,17 +1,17 @@
 <template>
   <b-offcanvas v-model="showAds" placement="top" class="ad-section" no-header>
-    <div class="d-flex h-100 w-100">
-      <div class="w-50 h-100">
+    <div class="d-flex h-100 w-100 inner-ad-block">
+      <div class="w-50 h-100 ad-block">
         <img
           class="w-100 h-100"
-          src="https://d1xv5jidmf7h0f.cloudfront.net/circleone/images/products_gallery_images/PVC-Banners.jpg"
+          src="https://www.shutterstock.com/image-vector/dark-wide-abstract-banner-grey-260nw-1804227037.jpg"
           alt=""
         />
       </div>
-      <div class="w-50 h-100">
+      <div class="w-50 h-100 ad-block">
         <img
           class="w-100 h-100"
-          src="https://i0.wp.com/businessnow.ca/wp-content/uploads/2020/08/VinylBanner.jpg?fit=1000%2C629&ssl=1"
+          src="https://www.shutterstock.com/image-vector/dark-wide-abstract-banner-grey-260nw-1804227037.jpg"
           alt=""
         />
       </div>
@@ -175,8 +175,14 @@ onMounted(() => {
   margin: 0;
   padding: 0;
 }
+.inner-ad-block {
+  border: 10px solid black;
+}
 .ad-section .offcanvas-body {
   margin: 0;
   padding: 0;
+}
+.ad-block {
+  border: 10px solid #c9f73a;
 }
 </style>
