@@ -89,6 +89,22 @@ const routes = [
       ),
   },
   {
+    path: "/platform-tutorials",
+    name: "Platform Tutorials",
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/learn/components/platform-tutorials/PlatformTutorials.vue"
+      ),
+  },
+  {
+    path: "/faq",
+    name: "FAQ",
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/learn/components/faq/Faq.vue"
+      ),
+  },
+  {
     path: "/webinars",
     name: "Webinars",
     component: () =>
