@@ -11,8 +11,16 @@
           <ul class="list-unstyled nav-links mb-5">
             <li><a href="#">About Company</a></li>
             <li><a href="#">FAQ</a></li>
-            <li><router-link to="/policy"> KYC / AML Policy </router-link></li>
+            <li>
+              <router-link to="/kyc-policy"> KYC / AML Policy </router-link>
+            </li>
+            <li>
+              <router-link to="/privacy-policy"> Privacy Policy</router-link>
+            </li>
             <li><router-link to="/get-in-touch"> Contact </router-link></li>
+            <li>
+              <router-link to="/risk-disclosure"> Risk Disclosure</router-link>
+            </li>
           </ul>
 
           <div class="social mb-4">

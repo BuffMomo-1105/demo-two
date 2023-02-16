@@ -121,10 +121,22 @@ const routes = [
       ),
   },
   {
-    path: "/policy",
-    name: "Policy",
+    path: "/kyc-policy",
+    name: "KYC Policy",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/policy/PolicyPage.vue"),
+      import(/* webpackChunkName: "about" */ "../views/policy/KycPolicy.vue"),
+  },
+  {
+    path: "/privacy-policy",
+    name: "Privacy Policy",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/policy/PrivacyPage.vue"),
+  },
+  {
+    path: "/risk-disclosure",
+    name: "Risk Disclosure",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/policy/RiskDisclosure.vue"),
   },
   ...adminRoutes,
 ];

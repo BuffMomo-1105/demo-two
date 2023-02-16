@@ -1,0 +1,43 @@
+.dash-policy {
+    width: 5%;
+  }
+  .policy-desc,
+  .policy-desc,
+  .policy-sub-heading,
+  .policy-heading,
+  .lists {
+    padding: 0 10%;
+  }
+  .policy-page {
+    top: 110px;
+    margin-bottom: 5rem;
+    max-width: 1500px;
+  }
+  .policy-heading h2 {
+    margin-bottom: 50px;
+    font-family: "Nekst", sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 700;
+    color: #c9f73a;
+  }
+  .policy-sub-heading h3 {
+    position: relative;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    font: 32px/36px "Nekst", sans-serif;
+    font-weight: 700;
+    border-bottom: 4px solid #c9f73a;
+    width: fit-content;
+    max-width: 100%;
+  }
+  .desc-heading h3 {
+    position: relative;
+    font: 24px/28px "Nekst", sans-serif;
+    font-weight: 700;
+  }
+  .policy-desc p {
+    font: 16px/24px "Inter", sans-serif;
+    font-weight: 400;
+    text-align: justify;
+  }
