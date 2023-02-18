@@ -329,7 +329,7 @@
           Client’s account regarding derivative Securities which are held
           overnight throughout the life of the contract. For more information
           regarding swap rates and the respective calculations, please visit the
-          Company’s website at http://zara-fx.com/account-type
+          Company’s website at  <a href=" http://b2pip.com" target="_blank">http://b2pip.com</a> 
         </p>
         <p>
           6.4 You are responsible for any taxes and/or any other duty or legal
