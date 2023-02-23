@@ -1,4 +1,4 @@
-const forexMargin=[
+export const forexMargin=[
     {
         symbol:'AUDCAD',
         fullName:'Australian Dollar vs Canadian Dollar',
@@ -8,7 +8,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-5',
         swapShort:'-3',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -22,7 +22,7 @@ const forexMargin=[
         margin:'3',
         swapLong:'0',
         swapShort:'-6',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -36,7 +36,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-5',
         swapShort:'-18',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -50,7 +50,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-15',
         swapShort:'2',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -64,7 +64,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'1',
         swapShort:'-8',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -78,7 +78,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-2',
         swapShort:'-2',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -92,7 +92,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-6',
         swapShort:'0',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -106,7 +106,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-14',
         swapShort:'-19',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -120,7 +120,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-14',
         swapShort:'-19',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -134,7 +134,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-5',
         swapShort:'-3',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -148,7 +148,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-5',
         swapShort:'-3',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -162,7 +162,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-238',
         swapShort:'59',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -176,7 +176,7 @@ const forexMargin=[
         margin:'3',
         swapLong:'2',
         swapShort:'-8',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -190,7 +190,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-14',
         swapShort:'-10',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -204,7 +204,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'3',
         swapShort:'-11',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -218,7 +218,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-39',
         swapShort:'10',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -232,7 +232,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-3',
         swapShort:'-1',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -246,7 +246,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-8',
         swapShort:'-27',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -260,7 +260,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-3',
         swapShort:'-4',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -274,7 +274,7 @@ const forexMargin=[
         margin:'3',
         swapLong:'-19',
         swapShort:'-10',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -288,7 +288,7 @@ const forexMargin=[
         margin:'3',
         swapLong:'-143',
         swapShort:'69',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -302,7 +302,7 @@ const forexMargin=[
         margin:'3',
         swapLong:'-4',
         swapShort:'-2',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -316,7 +316,7 @@ const forexMargin=[
         margin:'3',
         swapLong:'-5',
         swapShort:'0',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -330,7 +330,7 @@ const forexMargin=[
         margin:'3',
         swapLong:'-110',
         swapShort:'50',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -344,7 +344,7 @@ const forexMargin=[
         margin:'3',
         swapLong:'-38',
         swapShort:'-3',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -358,7 +358,7 @@ const forexMargin=[
         margin:'3',
         swapLong:'-17',
         swapShort:'3',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -372,7 +372,7 @@ const forexMargin=[
         margin:'3',
         swapLong:'-385',
         swapShort:'110',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -386,7 +386,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'0',
         swapShort:'-3',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -400,7 +400,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-1',
         swapShort:'-1',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -414,7 +414,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-7',
         swapShort:'0',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -428,7 +428,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-11',
         swapShort:'1',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -442,7 +442,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-13',
         swapShort:'2',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -456,7 +456,7 @@ const forexMargin=[
         margin:'3',
         swapLong:'-3',
         swapShort:'-4',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -470,7 +470,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-3',
         swapShort:'0',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -484,7 +484,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-56',
         swapShort:'22',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -498,7 +498,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-12',
         swapShort:'-15',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -512,7 +512,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-8',
         swapShort:'-1',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -526,7 +526,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-48',
         swapShort:'7',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -540,7 +540,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-136',
         swapShort:'66',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -554,7 +554,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-16',
         swapShort:'-3',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -568,7 +568,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-2',
         swapShort:'-4',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -582,7 +582,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-54',
         swapShort:'18',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -596,7 +596,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-8',
         swapShort:'1',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -610,7 +610,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-17',
         swapShort:'5',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -624,7 +624,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-105',
         swapShort:'48',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -638,7 +638,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-5539',
         swapShort:'1698',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -652,7 +652,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-36',
         swapShort:'11',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -666,7 +666,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-15',
         swapShort:'3',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -680,7 +680,7 @@ const forexMargin=[
         margin:'20',
         swapLong:'-872',
         swapShort:'449',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -694,7 +694,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-13',
         swapShort:'2',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -708,7 +708,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-311',
         swapShort:'103',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -722,7 +722,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-6',
         swapShort:'-6',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -736,7 +736,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-9',
         swapShort:'-2',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -750,7 +750,7 @@ const forexMargin=[
         margin:'3',
         swapLong:'0',
         swapShort:'-13',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -764,7 +764,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-29',
         swapShort:'5',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -778,7 +778,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'11',
         swapShort:'-71',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -792,7 +792,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-31',
         swapShort:'-42',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -806,7 +806,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-61',
         swapShort:'17',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -820,7 +820,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'2',
         swapShort:'-14',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -834,7 +834,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-58',
         swapShort:'19',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -848,7 +848,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-4',
         swapShort:'-4',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -862,7 +862,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-13',
         swapShort:'0',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -876,7 +876,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-40',
         swapShort:'2',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -890,7 +890,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'3',
         swapShort:'-74',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -904,7 +904,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-8',
         swapShort:'-3',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -918,7 +918,7 @@ const forexMargin=[
         margin:'20',
         swapLong:'-884',
         swapShort:'461',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -932,7 +932,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-7',
         swapShort:'-2',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -946,7 +946,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-419',
         swapShort:'141',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -960,7 +960,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-1',
         swapShort:'-2',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -974,7 +974,7 @@ const forexMargin=[
         margin:'5',
         swapLong:'0',
         swapShort:'-3',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -988,7 +988,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-1',
         swapShort:'-2',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -1002,7 +1002,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-2',
         swapShort:'-4',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -1016,7 +1016,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-4',
         swapShort:'-3',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -1030,7 +1030,7 @@ const forexMargin=[
         margin:'3',
         swapLong:'2',
         swapShort:'-8',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -1044,7 +1044,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'16',
         swapShort:'-46',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -1058,7 +1058,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-11',
         swapShort:'2',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -1072,7 +1072,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'3',
         swapShort:'-10',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -1086,7 +1086,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-2',
         swapShort:'-1',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -1100,7 +1100,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'16',
         swapShort:'-54',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -1114,7 +1114,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-2',
         swapShort:'-4',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -1128,7 +1128,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-2',
         swapShort:'-3',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -1142,7 +1142,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-2',
         swapShort:'-2',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -1156,7 +1156,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'-4',
         swapShort:'-32',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -1170,7 +1170,7 @@ const forexMargin=[
         margin:'1',
         swapLong:'2',
         swapShort:'-10',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'
@@ -1184,7 +1184,7 @@ const forexMargin=[
         margin:'20',
         swapLong:'1',
         swapShort:'-6',
-        tardingTime:'0:00 - 23:59',
+        tradingTime:'0:00 - 23:59',
         sundayOpenTime:'21:00',
         fridayOpenTime:'21:00',
         availiablity:'cTrader'

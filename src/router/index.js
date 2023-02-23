@@ -75,8 +75,8 @@ const routes = [
       ),
   },
   {
-    path: "/trading-tool",
-    name: "Trading Tool",
+    path: "/margin",
+    name: "Margin",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/trading-tool/index.vue"),
   },

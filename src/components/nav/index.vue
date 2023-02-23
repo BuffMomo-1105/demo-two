@@ -18,7 +18,7 @@ const menus = ref([
   },
   { name: "Copy Trading", path: "/copy-trading", subLinks: null },
   { name: "Trading Account", path: "/trading-account", subLinks: null },
-  { name: "Trading Tool", path: "/trading-tool", subLinks: null },
+  { name: "Margin", path: "/margin", subLinks: null },
   {
     name: "Learn & Earn",
     path: "null",

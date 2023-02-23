@@ -24,6 +24,12 @@ import ArrowTheme from "./components/icons/ArrowTheme.vue";
 import Dash from "./components/icons/Dash.vue";
 import ContactForm from "./components/ContactForm.vue";
 
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+// gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
 const app = createApp(App);
 app.component("custom-back", CustomBackground);
 app.component("arrow-black", ArrowBlack);
