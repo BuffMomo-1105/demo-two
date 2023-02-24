@@ -13,7 +13,7 @@
           {{ item.title }}
           <span>({{ item.data.length }})</span>
         </h2>
-        <Table :data="item.data" />
+        <Table :data="item.data" :title="item.title"/>
       </section>
     </div>
   </main>
@@ -51,7 +51,7 @@ export default {
         {
           title: "Crypto CFD",
           id: "#crypto-CFD",
-          data: data.eftsCFD,
+          data: data.cryptoCFD,
         },
         {
           title: "ETFs CFD",
@@ -61,17 +61,17 @@ export default {
         {
           title: "Shares USA CFD",
           id: "#shares-usa-cfd",
-          data: data.forexMargin,
+          data: data.sharesUsaCFD,
         },
         {
           title: "Shares EU CFD",
           id: "#shares-eu-cfd",
-          data: data.forexMargin,
+          data: data.sharesEuCFD,
         },
         {
           title: "Shares Asia CFD",
           id: "#shares-asia-cfd",
-          data: data.forexMargin,
+          data: data.sharesAsiaCFD,
         },
       ],
     };
