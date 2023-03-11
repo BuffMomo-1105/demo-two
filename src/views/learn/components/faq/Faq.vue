@@ -124,39 +124,10 @@ function addForex() {
   color: #fff;
   background: transparent;
 }
-.theme-bg h1 {
-  width: 80%;
-  max-width: 1500px;
-  top: 25px;
-  text-transform: uppercase;
-  color: #000;
-  margin: 0 auto 15px;
-  font-weight: 600;
-  line-height: 1.2;
-  font-family: "Nekst", sans-serif;
-  font-size: 32px;
-}
 .add-btn:hover {
   background-color: #c9f73a !important;
   border: none;
   color: #000;
-}
-.forex-basics {
-  top: 100px;
-  /* margin-bottom: 140px; */
-}
-.theme-bg {
-  height: 150px;
-  background-color: #c9f73a;
-}
-.forex-material {
-  max-width: 1500px;
-  width: 100%;
-  margin: auto;
-  top: -50px;
-  background-color: #fff;
-  box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
-  margin-top: 10px;
 }
 .forex-navs {
   width: 100%;
@@ -182,11 +153,6 @@ function addForex() {
   .tab-content {
     font-size: 24px;
     min-height: 100%;
-  }
-  .forex-material {
-    width: 80%;
-    top: -67px;
-    min-height: 600px;
   }
   .forex-contents {
     display: block;

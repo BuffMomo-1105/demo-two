@@ -169,21 +169,6 @@ const lists = ref([
 .trading-account-page {
   padding-top: 120px;
 }
-.theme-bg {
-  height: 150px;
-  background-color: #c9f73a;
-}
-.theme-bg h1 {
-  width: 80%;
-  top: 25px;
-  text-transform: uppercase;
-  color: #000;
-  margin: 0 auto 15px;
-  font-weight: 600;
-  line-height: 1.2;
-  font-family: "Nekst", sans-serif;
-  font-size: 32px;
-}
 .account-section {
   max-width: 1500px;
   width: 80%;

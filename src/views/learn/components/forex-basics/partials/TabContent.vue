@@ -192,6 +192,7 @@ watch(
   margin-bottom: 1em;
   border-left: 20px solid #c9f35a;
   padding-left: 10px;
+  color: #000 !important;
 }
 .title-content {
   font-size: 22px;

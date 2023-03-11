@@ -583,12 +583,6 @@
 .quick-trade {
   width: 40%;
 }
-.dropdown-item:active {
-  color: #000000 !important;
-  background-color: #ffffff !important;
-  opacity: 0.5;
-  border-bottom: 2px solid #c9f73a;
-}
 /* animation */
 
 .mbl-app {

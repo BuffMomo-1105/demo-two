@@ -18,7 +18,15 @@ const menus = ref([
   },
   { name: "Copy Trading", path: "/copy-trading", subLinks: null },
   { name: "Trading Account", path: "/trading-account", subLinks: null },
-  { name: "Margin", path: "/margin", subLinks: null },
+  {
+    name: "Margin",
+    path: "null",
+    subLinks: [
+      { name: "Liquidity Specifications", path: "/liquidity-specifications" },
+      { name: "Profit Calculator", path: "/profit-calculator" },
+      { name: "Margin Calculator", path: "/margin-calculator" },
+    ],
+  },
   {
     name: "Learn & Earn",
     path: "null",

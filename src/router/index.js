@@ -75,10 +75,28 @@ const routes = [
       ),
   },
   {
-    path: "/margin",
-    name: "Margin",
+    path: "/liquidity-specifications",
+    name: "Liquidity Specifications",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/trading-tool/index.vue"),
+      import(
+        /* webpackChunkName: "about" */ "../views/trading-tool/components/liquid-specification/index.vue"
+      ),
+  },
+  {
+    path: "/profit-calculator",
+    name: "Profit Calculator",
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/trading-tool/components/profit-calculator/index.vue"
+      ),
+  },
+  {
+    path: "/margin-calculator",
+    name: "Margin Calculator",
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/trading-tool/components/margin-calculator/index.vue"
+      ),
   },
   {
     path: "/forex-basics",
@@ -136,7 +154,17 @@ const routes = [
     path: "/risk-disclosure",
     name: "Risk Disclosure",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/policy/RiskDisclosure.vue"),
+      import(
+        /* webpackChunkName: "about" */ "../views/policy/RiskDisclosure.vue"
+      ),
+  },
+  {
+    path: "/about-company",
+    name: "About Company",
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/about-company/index.vue"
+      ),
   },
   ...adminRoutes,
 ];

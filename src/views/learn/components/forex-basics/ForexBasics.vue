@@ -100,7 +100,13 @@ function addForex() {
         />
       </div>
     </div>
-    <b-offcanvas v-model="showD" no-header-close no-header class="desktop-hide" no-fade="false">
+    <b-offcanvas
+      v-model="showD"
+      no-header-close
+      no-header
+      class="desktop-hide"
+      no-fade="false"
+    >
       <TabContent
         v-model:current-content="currentContent"
         v-model:current-tab="currentTab"
@@ -119,39 +125,10 @@ function addForex() {
   color: #fff;
   background: transparent;
 }
-.theme-bg h1 {
-  width: 80%;
-  max-width: 1500px;
-  top: 25px;
-  text-transform: uppercase;
-  color: #000;
-  margin: 0 auto 15px;
-  font-weight: 600;
-  line-height: 1.2;
-  font-family: "Nekst", sans-serif;
-  font-size: 32px;
-}
 .add-btn:hover {
   background-color: #c9f73a !important;
   border: none;
   color: #000;
-}
-.forex-basics {
-  top: 100px;
-  /* margin-bottom: 140px; */
-}
-.theme-bg {
-  height: 150px;
-  background-color: #c9f73a;
-}
-.forex-material {
-  max-width: 1500px;
-  width: 100%;
-  margin: auto;
-  top: -50px;
-  background-color: #fff;
-  box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
-  margin-top: 10px
 }
 .forex-navs {
   width: 100%;
@@ -176,10 +153,6 @@ function addForex() {
 @media (min-width: 769px) {
   .tab-content {
     font-size: 24px;
-  }
-  .forex-material {
-    width: 80%;
-    top: -67px;
   }
   .forex-contents {
     display: block;
@@ -255,7 +228,7 @@ function addForex() {
 .offcanvas.offcanvas-start {
   width: 100% !important;
 }
-:deep(.offcanvas-backdrop.show){
+:deep(.offcanvas-backdrop.show) {
   opacity: 0 !important;
   display: none;
 }

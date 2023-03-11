@@ -114,20 +114,4 @@ const form = ref({
   font-size: 24px;
   width: 100%;
 }
-.form-control {
-  height: 55px;
-  background: transparent !important;
-  color: #c9f73a !important;
-}
-.form-control:focus {
-  border: 2px solid #c9f73a !important;
-}
-.offcanvas-body {
-  margin-top: 2em;
-}
-.form-control::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white !important;
-  opacity: 1; /* Firefox */
-}
 </style>

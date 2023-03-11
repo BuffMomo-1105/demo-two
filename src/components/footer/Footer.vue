@@ -9,8 +9,10 @@
             /></a>
           </div>
           <ul class="list-unstyled nav-links mb-5">
-            <li><a href="#">About Company</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li>
+              <router-link to="/about-company"> About Company </router-link>
+            </li>
+            <li><router-link to="/faq"> FAQ </router-link></li>
             <li>
               <router-link to="/kyc-policy"> KYC / AML Policy </router-link>
             </li>
