@@ -70,10 +70,60 @@ onMounted(() => {
         </div>
       </div>
     </section>
+    <section class="about-section-three bg-white">
+      <div class="row d-flex flex-wrap" style="max-width: 1500px">
+        <div class="col left-item text-start">
+          <div class="picture">
+            <img src="../../assets/img/cs.avif" alt="Equity Copy" />
+          </div>
+        </div>
+        <div class="col right-item">
+          <div class="desc">
+            <div class="d-text d-flex text-justify mb-4 mt-4">
+              At B2pip, we understand that the world of trading can be
+              overwhelming. That is why our customer service team is available
+              to answer any questions you may have about our services. We are
+              committed to providing a secure and reliable trading experience
+              for all of our clients.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-quote">
+      <div style="max-width: 1500px">
+        <h1>
+          With B2pip, you can take control of your financial future! We’re
+          excited to help you achieve your trading goals –
+          <span> start your journey now with B2pip. </span>
+        </h1>
+      </div>
+    </section>
   </div>
 </template>
 
 <style>
+.about-quote {
+  padding: 4rem 2rem;
+  background: linear-gradient(
+    180deg,
+    rgba(201, 247, 58, 0) 52.6%,
+    rgba(201, 247, 58, 0.5) 100%
+  );
+  background-color: black;
+  color: white;
+}
+.about-quote h1 {
+  font: 24px/44px "Nekst", sans-serif;
+  font-weight: 700;
+  margin-left: 11px;
+}
+.about-quote h1 span {
+  color: #c9f73a;
+}
+.text-justify {
+  text-align: justify;
+}
 .about-section {
   /* background-color: black; */
   padding: 4rem 0 0 0;
@@ -119,6 +169,19 @@ onMounted(() => {
   margin-right: 5px;
   background-color: #c9f73a;
   border-radius: 50%;
+}
+@media (min-width: 768px) {
+  .about-quote {
+    padding: 7rem 2rem;
+  }
+  .about-quote h1 {
+    font: 38px/44px "Nekst", sans-serif;
+    font-weight: 700;
+    font: 56px/62px "Nekst", sans-serif;
+    font-weight: 700;
+    width: 75%;
+    margin: auto;
+  }
 }
 @media (max-width: 800px) {
   .about-card-one-content {
